@@ -3,54 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Upgrade</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>UPGgrade</title>
+<link rel="stylesheet" href="../css/style.css" />
     <link
       rel="icon"
-      href="./images/867b18a0c147c95b9cd84b784f5be05eea647bbbe7f6d059f4e66db9ae0c015f.svg"
+      href="../images/867b18a0c147c95b9cd84b784f5be05eea647bbbe7f6d059f4e66db9ae0c015f.svg"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
       rel="stylesheet"
     />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap");
-      body {
-        font-family: "Inter", sans-serif;
-        overflow-x: hidden;
-      }
-      .pink-brand {
-        color: #e5007d;
-      }
-      .bg-brand {
-        background-color: #e5007d;
-      }
-      /* Hover va focus holatlari uchun */
-      .hover-bg-brand-soft:hover {
-        background-color: #fff0f7;
-      }
-      .text-brand {
-        color: #e5007d;
-      }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
-  <body class="bg-gray-50">
-    <div class="loading">
-      <!-- From Uiverse.io by esraaabdel-kareem -->
-      <div class="loader">
-        <div class="cup">
-          <div class="cup-handle"></div>
-          <div class="smoke one"></div>
-          <div class="smoke two"></div>
-          <div class="smoke three"></div>
-        </div>
-        <!-- <div class="load">..........................</div> -->
-      </div>
-    </div>
-    <!-- LOADING END  -->
-    <header>
+  <body class="bg-gray-50 text-gray-900">
+     <header>
       <nav class="bg-white border-b border-gray-200 sticky top-0 z-30">
         <div
           class="max-w-[1480px] mx-auto px-4 py-3 flex items-center justify-between gap-4"
@@ -77,9 +47,9 @@
             </svg>
           </button>
 
-          <a href="#" class="flex-shrink-0">
+          <a href="../index.html" class="flex-shrink-0">
             <img
-              src="./images/d73d17452d7c7cd96e0f7e1e486fbb64538e33e4a91e9ef39b80a2603bcb2c31.png"
+              src="../images/d73d17452d7c7cd96e0f7e1e486fbb64538e33e4a91e9ef39b80a2603bcb2c31.png"
               width="200px"
               alt="Logo"
             />
@@ -119,7 +89,7 @@
               </svg>
               <span class="text-[9px] font-bold uppercase mt-1">Сравнение</span>
             </div>
-            <div class="theme-wrapper">
+                    <div class="theme-wrapper">
   <button id="theme-toggle" class="theme-btn">
     <div class="sun-icon">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -191,7 +161,7 @@ if (localStorage.getItem('theme') === 'dark') {
 
         <div class="hidden md:block bg-white border-t border-gray-100">
           <div class="max-w-[1480px] mx-auto px-4 flex items-center">
-          <!-- cotolog  -->
+             <!-- cotolog  -->
            <div class="bg-white border-b sticky top-0 z-[100]   flex items-center gap-6 max-w-[1480px] ">
         <button id="catalogBtn" class="bg-[#c2005d] hover:bg-[#a0004d] text-white px-5 py-2 flex items-center gap-2 transition-all font-medium">
             <span id="btnIcon">☰</span>
@@ -200,7 +170,7 @@ if (localStorage.getItem('theme') === 'dark') {
        
     </div>
 
-    <div id="catalogOverlay" class="hidden fixed inset-0 top-[73px] bg-black/40 z-[999] backdrop-blur-sm">
+    <div id="catalogOverlay" class="hidden  fixed inset-0 top-[73px] bg-black/40 z-[999999] backdrop-blur-sm">
         <div class="bg-white w-full max-w-5xl h-[500px] mx-auto flex shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-4 duration-300">
             
             <div class="w-1/3 border-r bg-gray-50 overflow-y-auto custom-scroll">
@@ -220,7 +190,7 @@ if (localStorage.getItem('theme') === 'dark') {
   
     
 
-    <script>
+    <script class="z-50">
         const menuData = {
             "accessories": {
                 name: "Аксессуары",
@@ -310,11 +280,11 @@ if (localStorage.getItem('theme') === 'dark') {
             >
               <div class="flex items-center gap-2">
                 <img
-                  src="./images/60408282791fd3a9d468c5bc5e91f9306c8f30a3ce4245fa108f3160ad2dc372.svg"
+                  src="../images/60408282791fd3a9d468c5bc5e91f9306c8f30a3ce4245fa108f3160ad2dc372.svg"
                   alt=""
                 />
                 <a
-                  href="./pages/configurator.html "
+                  href="../pages/configurator.html "
                   class="hover:text-pink-600"
                 >
                   Конфигуратор</a
@@ -322,15 +292,14 @@ if (localStorage.getItem('theme') === 'dark') {
               </div>
               <div class="flex items-center gap-2">
                 <img
-                  src="./images/867b18a0c147c95b9cd84b784f5be05eea647bbbe7f6d059f4e66db9ae0c015f.svg"
+                  src="../images/867b18a0c147c95b9cd84b784f5be05eea647bbbe7f6d059f4e66db9ae0c015f.svg"
                   alt=""
                 />
-                <a href="./pages/igrovye-sborki.html" class="hover:text-pink-600">Купить компьютер</a>
+                <a href="./igrovye-sborki.html" class="hover:text-pink-600">Купить компьютер</a>
               </div>
-              <a href="./pages/news.html" class="hover:text-pink-600">Новинки</a>
-             
+              <a href="./news.html" class="hover:text-pink-600">Новинки</a>
               
-              <a href="./pages/trademarks.html" class="hover:text-pink-600 border-b-2 border-brand"
+              <a href="../pages/trademarks.html" class="hover:text-pink-600 border-b-2 border-brand"
                 >Все бренды</a
               >
             </div>
@@ -349,7 +318,7 @@ if (localStorage.getItem('theme') === 'dark') {
         >
           <a href="#" class="flex items-center">
             <img
-              src="./images/d73d17452d7c7cd96e0f7e1e486fbb64538e33e4a91e9ef39b80a2603bcb2c31.png"
+              src="../images/d73d17452d7c7cd96e0f7e1e486fbb64538e33e4a91e9ef39b80a2603bcb2c31.png"
               class="h-8"
               alt="Logo"
             />
@@ -383,7 +352,7 @@ if (localStorage.getItem('theme') === 'dark') {
           <ul class="space-y-2 font-medium">
             <li>
               <a
-                href="./index.html"
+                href="#"
                 class="flex items-center px-3 py-2.5 text-gray-900 rounded-lg bg-pink-50 text-brand group"
               >
                 <svg
@@ -449,14 +418,14 @@ if (localStorage.getItem('theme') === 'dark') {
               <ul id="dropdown-config" class="hidden py-2 space-y-1">
                 <li>
                   <a
-                    href="./pages/igrovye-sborki.html"
+                    href="#"
                     class="pl-11 flex items-center px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-gray-50 hover:text-brand"
                     >Игровые ПК</a
                   >
                 </li>
                 <li>
                   <a
-                    href="./pages/configurator.html"
+                    href="#"
                     class="pl-11 flex items-center px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-gray-50 hover:text-brand"
                     >Рабочие станции</a
                   >
@@ -466,7 +435,7 @@ if (localStorage.getItem('theme') === 'dark') {
 
             <li>
               <a
-                href="./pages/news.html"
+                href="#"
                 class="flex items-center px-3 py-2.5 text-gray-700 rounded-lg hover:bg-gray-50 hover:text-brand group"
               >
                 <svg
@@ -518,7 +487,7 @@ if (localStorage.getItem('theme') === 'dark') {
 
             <li>
               <a
-                href="./index.html"
+                href="#"
                 class="flex items-center px-3 py-2.5 text-gray-700 rounded-lg hover:bg-gray-50 hover:text-brand group"
               >
                 <svg
@@ -678,271 +647,170 @@ if (localStorage.getItem('theme') === 'dark') {
         </form>
       </div>
     </header>
-    <main>
-      <section id="corusel" class="mt-[5px]  ">
-        <div class="max-w-[1480px] mx-auto px-4">
-          <div
-            id="default-carousel"
-            class="relative w-full z-[-50]"
-            data-carousel="slide"
-          >
-            <div
-              class="relative h-48 sm:h-64 md:h-80 lg:h-[500px] overflow-hidden rounded-base"
-            >
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
-                  src="./images/corusel1.png"
-                  class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..."
-                />
-              </div>
+     
+ <div class="flex gap-[10px] pt-[20px] pb-[20px] max-w-[1450px] w-full mx-auto">
+    <a href="../index.html"><h1 class="">Главная </h1></a>
+    <span>></span>
+    <a href="./news.html"><h1 class="text-[black]/50">Новинки</h1></a>
 
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
-                  src="./images/corusel2.png"
-                  class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..."
-                />
-              </div>
-
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
-                  src="./images/corusel3.png"
-                  class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..."
-                />
-              </div>
-
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
-                  src="./images/corusel4.png"
-                  class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..."
-                />
-              </div>
-
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
-                  src="./images/corusel5.png"
-                  class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..."
-                />
-              </div>
-            </div>
-
-            <div
-              class="absolute z-30 flex -translate-x-1/2 bottom-3 md:bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
-            >
-              <button
-                type="button"
-                class="w-2 h-2 md:w-3 md:h-3 rounded-full bg-white/50"
-                aria-current="true"
-                aria-label="Slide 1"
-                data-carousel-slide-to="0"
-              ></button>
-              <button
-                type="button"
-                class="w-2 h-2 md:w-3 md:h-3 rounded-full bg-white/50"
-                aria-current="false"
-                aria-label="Slide 2"
-                data-carousel-slide-to="1"
-              ></button>
-              <button
-                type="button"
-                class="w-2 h-2 md:w-3 md:h-3 rounded-full bg-white/50"
-                aria-current="false"
-                aria-label="Slide 3"
-                data-carousel-slide-to="2"
-              ></button>
-              <button
-                type="button"
-                class="w-2 h-2 md:w-3 md:h-3 rounded-full bg-white/50"
-                aria-current="false"
-                aria-label="Slide 4"
-                data-carousel-slide-to="3"
-              ></button>
-              <button
-                type="button"
-                class="w-2 h-2 md:w-3 md:h-3 rounded-full bg-white/50"
-                aria-current="false"
-                aria-label="Slide 5"
-                data-carousel-slide-to="4"
-              ></button>
-            </div>
-
-            <button
-              type="button"
-              class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-2 md:px-4 cursor-pointer group focus:outline-none"
-              data-carousel-prev
-            >
-              <span
-                class="inline-flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/30 group-hover:bg-white/50"
-              >
-                <svg
-                  class="w-4 h-4 md:w-5 md:h-5 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m15 19-7-7 7-7"
-                  />
-                </svg>
-              </span>
-            </button>
-            <button
-              type="button"
-              class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-2 md:px-4 cursor-pointer group focus:outline-none"
-              data-carousel-next
-            >
-              <span
-                class="inline-flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/30 group-hover:bg-white/50"
-              >
-                <svg
-                  class="w-4 h-4 md:w-5 md:h-5 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m9 5 7 7-7 7"
-                  />
-                </svg>
-              </span>
-            </button>
-          </div>
-        </div>
-      </section>
-    </main>
-    <section class="bg-gray-50 py-10">
-      <div class="max-w-[1480px] mx-auto p-4 font-sans">
-        <h2
-          class="text-2xl font-black uppercase r mb-8 text-gray-900 italic"
+ </div>
+    <div class="flex max-w-[1450px] mx-auto w-full">
+      <aside
+        id="drawer-filter"
+        class="fixed   top-0 left-0  h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 md:translate-x-0 md:static md:block border-r"
+        tabindex="-1"
+        aria-labelledby="drawer-label"
+      >
+        <h5
+          id="drawer-label"
+          class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 uppercase"
         >
-          НОВИНКИ
-        </h2>
-
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+          <i class="fas fa-sliders-h mr-2"></i> Фильтр
+        </h5>
+        <button
+          type="button"
+          data-drawer-hide="drawer-filter"
+          aria-controls="drawer-filter"
+          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 end-2.5 inline-flex items-center md:hidden"
         >
-          <a  href="./pages for pace/monitor.html">
-            <div
-          data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
-            >
-              <div class="absolute top-4 right-4 flex flex-col gap-2 z-10">
-                <button
-                  class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    />
-                  </svg>
-                </button>
-              </div>
+          <i class="fas fa-times"></i>
+        </button>
 
-              <div class="h-48 flex items-center justify-center mb-4">
-                <img
-                  src="./images/monitor.webp"
-                  alt="Monitor"
-                  class="object-contain max-h-full"
-                />
-              </div>
-
-              <h3
-                class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
+        <div class="py-4 overflow-y-auto">
+          <ul class="space-y-2 font-medium">
+            <li>
+              <button
+                type="button"
+                class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100"
+                aria-controls="dropdown-brand"
+                data-collapse-toggle="dropdown-brand"
               >
-                2E Gaming R2723BV 27" 165Hz VA (Curved)
-              </h3>
-
-              <div class="flex mb-4">
-                <div class="rating">
-                  <input
-                    value="5"
-                    name="rating-1"
-                    id="star5-1"
-                    type="radio"
-                  /><label for="star5-1"></label>
-                  <input
-                    value="4"
-                    name="rating-1"
-                    id="star4-1"
-                    type="radio"
-                  /><label for="star4-1"></label>
-                  <input
-                    value="3"
-                    name="rating-1"
-                    id="star3-1"
-                    type="radio"
-                  /><label for="star3-1"></label>
-                  <input
-                    value="2"
-                    name="rating-1"
-                    id="star2-1"
-                    type="radio"
-                  /><label for="star2-1"></label>
-                  <input
-                    value="1"
-                    name="rating-1"
-                    id="star1-1"
-                    type="radio"
-                  /><label for="star1-1"></label>
-                </div>
-              </div>
-
-              <div class="flex justify-between items-end mb-4">
-                <div>
-                  <p class="text-xs text-gray-400 mb-1">Цена:</p>
-                  <p class="text-lg font-bold text-[#ff0099]">2 019 000 UZS</p>
-                </div>
                 <span
-                  class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold"
-                  >2E Gaming</span
+                  class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
+                  >Игровая марка</span
                 >
-              </div>
-
-              <button
-                class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2 transition-colors"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-                <span class="font-medium">В корзину</span>
+                <i class="fas fa-chevron-down text-xs"></i>
               </button>
-            </div>
-          </a>
+              <ul id="dropdown-brand" class="py-2 space-y-2 ml-4">
+                <li>
+                  <label
+                    class="flex items-center p-2 rounded-lg hover:bg-gray-100 cursor-pointer"
+                    ><input
+                      type="checkbox"
+                      class="w-4 h-4 text-pink-600 bg-gray-100 border-gray-300 rounded focus:ring-pink-500 mr-2"
+                    />
+                    2E Gaming</label
+                  >
+                </li>
+                <li>
+                  <label
+                    class="flex items-center p-2 rounded-lg hover:bg-gray-100 cursor-pointer"
+                    ><input
+                      type="checkbox"
+                      class="w-4 h-4 text-pink-600 bg-gray-100 border-gray-300 rounded focus:ring-pink-500 mr-2"
+                    />
+                    HyperX</label
+                  >
+                </li>
+                <li>
+                  <label
+                    class="flex items-center p-2 rounded-lg hover:bg-gray-100 cursor-pointer"
+                    ><input
+                      type="checkbox"
+                      class="w-4 h-4 text-pink-600 bg-gray-100 border-gray-300 rounded focus:ring-pink-500 mr-2"
+                    />
+                    Logitech</label
+                  >
+                </li>
+              </ul>
+            </li>
+            <hr class="my-2" />
+            <li
+              class="p-2 text-sm text-gray-500 flex justify-between cursor-pointer hover:text-black"
+            >
+              Тип кресла <i class="fas fa-plus text-[10px]"></i>
+            </li>
+            <li
+              class="p-2 text-sm text-gray-500 flex justify-between cursor-pointer hover:text-black"
+            >
+              Материал <i class="fas fa-plus text-[10px]"></i>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-          <a  href="./pages for pace/asus2.html">
+      <main class="flex-1 p-6">
+        <div class="mb-6 border-b border-gray-200">
+          <ul
+            class="flex flex-wrap -mb-px text-sm font-medium text-center"
+            id="myTab"
+            data-tabs-toggle="#myTabContent"
+            role="tablist"
+          >
+            <li class="me-2" role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 rounded-t-lg"
+                id="all-tab"
+                data-tabs-target="#all"
+                type="button"
+                role="tab"
+              >
+                1
+              </button>
+            </li>
+            <li class="me-2" role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+                id="chairs-tab"
+                data-tabs-target="#chairs"
+                type="button"
+                role="tab"
+              >
+                2
+              </button>
+              
+            </li>
+            
+            <li class="me-2" role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+                id="peripherals-tab"
+                data-tabs-target="#peripherals"
+                type="button"
+                role="tab"
+              >
+                3
+              </button>
+            </li>
+            
+          </ul>
+        </div>
+
+        <div id="myTabContent">
+          <div
+            class="hidden p-4 rounded-lg bg-gray-50"
+            id="all"
+            role="tabpanel"
+            aria-labelledby="all-tab"
+          >
+            <div class="flex justify-between items-center mb-6">
+              <p class="text-gray-600 font-semibold">Laptoplar</p>
+              <select
+                class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 p-2.5"
+              >
+                <option selected>Название (А - Я)</option>
+                <option value="price">Narx bo'yicha</option>
+              </select>
+            </div>
+
+             <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4"
+        >
+          
+
+          <a href=" https://upg.uz/product/hyperx-cloud-earbuds-ii-red-864">
             <div
-          data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+              class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
             >
               <div class="absolute top-4 right-4 z-10">
                 <button
@@ -967,7 +835,888 @@ if (localStorage.getItem('theme') === 'dark') {
 
               <div class="h-48 flex items-center justify-center mb-4">
                 <img
-                  src="./images/monitor2.webp"
+                  src="../images/c8d1ac1179b175a20665b3659dede74feca4049f1608e27f7694549843cf0a2b.webp"
+                  alt="Laptop"
+                  class="object-contain max-h-full"
+                />
+              </div>
+
+              <h3
+                class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
+              >
+               HyperX Cloud Earbuds II Red
+
+ 
+              </h3>
+
+              <div class="flex mb-4">
+                <div class="rating">
+                  <input
+                    value="5"
+                    name="rating-2"
+                    id="star5-2"
+                    type="radio"
+                  /><label for="star5-2"></label>
+                  <input
+                    value="4"
+                    name="rating-2"
+                    id="star4-2"
+                    type="radio"
+                  /><label for="star4-2"></label>
+                  <input
+                    value="3"
+                    name="rating-2"
+                    id="star3-2"
+                    type="radio"
+                  /><label for="star3-2"></label>
+                  <input
+                    value="2"
+                    name="rating-2"
+                    id="star2-2"
+                    type="radio"
+                  /><label for="star2-2"></label>
+                  <input
+                    value="1"
+                    name="rating-2"
+                    id="star1-2"
+                    type="radio"
+                  /><label for="star1-2"></label>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-end mb-4">
+                <div>
+                  <p class="text-xs text-gray-400 mb-1">Цена:</p>
+                  <p class="text-lg font-bold text-[#ff0099]">557 000 UZS</p>
+                </div>
+                <span
+                  class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
+                  >HyperX</span
+                >
+              </div>
+
+              <button
+                class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <span class="font-medium text-sm">В корзину</span>
+              </button>
+            </div>
+          </a>
+
+          <a href=" https://upg.uz/product/hyperx-cloud-iii-black-860">
+            <div
+              class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+            >
+              <div class="absolute top-4 right-4 z-10">
+                <button
+                  class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="h-48 flex items-center justify-center mb-4">
+                <img
+                  src="../images/9781574036d1bbdee072ec61078a8816807fd1c57b329a667f4ea3519b1e3162.webp"
+                  alt="Laptop"
+                  class="object-contain max-h-full"
+                />
+              </div>
+
+              <h3
+                class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
+              >
+               HyperX Cloud III Black
+
+ 
+              </h3>
+
+              <div class="flex mb-4">
+                <div class="rating">
+                  <input
+                    value="5"
+                    name="rating-3"
+                    id="star5-3"
+                    type="radio"
+                  /><label for="star5-3"></label>
+                  <input
+                    value="4"
+                    name="rating-3"
+                    id="star4-3"
+                    type="radio"
+                  /><label for="star4-3"></label>
+                  <input
+                    value="3"
+                    name="rating-3"
+                    id="star3-3"
+                    type="radio"
+                  /><label for="star3-3"></label>
+                  <input
+                    value="2"
+                    name="rating-3"
+                    id="star2-3"
+                    type="radio"
+                  /><label for="star2-3"></label>
+                  <input
+                    value="1"
+                    name="rating-3"
+                    id="star1-3"
+                    type="radio"
+                  /><label for="star1-3"></label>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-end mb-4">
+                <div>
+                  <p class="text-xs text-gray-400 mb-1">Цена:</p>
+                  <p class="text-lg font-bold text-[#ff0099]">1 349 000 UZS</p>
+                </div>
+                <span
+                  class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
+                  >HyperX</span
+                >
+              </div>
+
+              <button
+                class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <span class="font-medium text-sm">В корзину</span>
+              </button>
+            </div></a
+          >
+
+          <a href="https://upg.uz/product/hyperx-quadcast-2-3816">
+            <div
+              class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+            >
+              <div class="absolute top-4 right-4 z-10">
+                <button
+                  class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="h-48 flex items-center justify-center mb-4">
+                <img
+                  src="../images/bb1386adb9a56284571a49297d271d0fc3b1b9c6b6584bc1804e9d119b604c4e.webp"
+                  alt="Gaming Laptop"
+                  class="object-contain max-h-full"
+                />
+              </div>
+
+              <h3
+                class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
+              >
+              HyperX QuadCast 2
+ 
+              </h3>
+
+              <div class="flex mb-4">
+                <div class="rating">
+                  <input
+                    value="5"
+                    name="rating-4"
+                    id="star5-4"
+                    type="radio"
+                  /><label for="star5-4"></label>
+                  <input
+                    value="4"
+                    name="rating-4"
+                    id="star4-4"
+                    type="radio"
+                  /><label for="star4-4"></label>
+                  <input
+                    value="3"
+                    name="rating-4"
+                    id="star3-4"
+                    type="radio"
+                  /><label for="star3-4"></label>
+                  <input
+                    value="2"
+                    name="rating-4"
+                    id="star2-4"
+                    type="radio"
+                  /><label for="star2-4"></label>
+                  <input
+                    value="1"
+                    name="rating-4"
+                    id="star1-4"
+                    type="radio"
+                  /><label for="star1-4"></label>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-end mb-4">
+                <div>
+                  <p class="text-xs text-gray-400 mb-1">Цена:</p>
+                  <p class="text-lg font-bold text-[#ff0099]">1 863 250 UZS</p>
+                </div>
+                <span
+                  class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
+                  >HyperX</span
+                >
+              </div>
+
+              <button
+                class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <span class="font-medium text-sm">В корзину</span>
+              </button>
+            </div>
+          </a>
+
+          <a href="https://upg.uz/product/lenovo-legion-25-10-f25245fg0-245-320hz-ips-(flat)-5672">
+            <div
+              class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+            >
+              <div class="absolute top-4 right-4 z-10">
+                <button
+                  class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="h-48 flex items-center justify-center mb-4">
+                <img
+                  src="../images/6ca84a959853f11ff5063851b3eeaa997b4db7eeb7be9cb099111ce0743e2a0b.webp"
+                  alt="Brateck"
+                  class="object-contain max-h-full"
+                />
+              </div>
+
+              <h3
+                class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
+              >
+                Lenovo Legion 25-10 F25245FG0 24.5 320Hz IPS
+
+ 
+              </h3>
+
+              <div class="flex mb-4">
+                <div class="rating">
+                  <input
+                    value="5"
+                    name="rating-5"
+                    id="star5-5"
+                    type="radio"
+                  /><label for="star5-5"></label>
+                  <input
+                    value="4"
+                    name="rating-5"
+                    id="star4-5"
+                    type="radio"
+                  /><label for="star4-5"></label>
+                  <input
+                    value="3"
+                    name="rating-5"
+                    id="star3-5"
+                    type="radio"
+                  /><label for="star3-5"></label>
+                  <input
+                    value="2"
+                    name="rating-5"
+                    id="star2-5"
+                    type="radio"
+                  /><label for="star2-5"></label>
+                  <input
+                    value="1"
+                    name="rating-5"
+                    id="star1-5"
+                    type="radio"
+                  /><label for="star1-5"></label>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-end mb-4">
+                <div>
+                  <p class="text-xs text-gray-400 mb-1">Цена:</p>
+                  <p class="text-lg font-bold text-[#ff0099]">2 082 500 UZS</p>
+                </div>
+                <span
+                  class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
+                  >Lenovo</span
+                >
+              </div>
+
+              <button
+                class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <span class="font-medium text-sm">В корзину</span>
+              </button>
+            </div>
+          </a>
+        </div>
+          </div>
+
+          <div
+            class="hidden p-4 rounded-lg bg-gray-50"
+            id="chairs"
+            role="tabpanel"
+            aria-labelledby="chairs-tab"
+          >
+            <p class="text-center text-gray-500 py-10">
+               bo'limi yuklanmoqda...
+               <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4"
+        >
+         
+          <!-- klavish  -->
+           <a href="https://upg.uz/product/rapoo-v500-pro-beige-green-3472">
+             <div
+            class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+          >
+            <div class="absolute top-4 right-4 flex flex-col gap-2 z-10">
+              <button
+                class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="h-48 flex items-center justify-center mb-4">
+              <img
+                src="../images/2a0f62adfa043c72c2140f6e656dca84030e07f29f96abe2620bac65e6dfeeaf.webp"
+                alt="Monitor"
+                class="object-contain max-h-full"
+              />
+            </div>
+
+            <h3
+              class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
+            >
+             Rapoo V500 PRO Beige Green
+ 
+            </h3>
+
+            <div class="flex mb-4">
+              <div class="rating">
+                <input
+                  value="5"
+                  name="rating-6"
+                  id="star5-6"
+                  type="radio"
+                /><label for="star5-6"></label>
+                <input
+                  value="4"
+                  name="rating-6"
+                  id="star4-6"
+                  type="radio"
+                /><label for="star4-6"></label>
+                <input
+                  value="3"
+                  name="rating-6"
+                  id="star3-6"
+                  type="radio"
+                /><label for="star3-6"></label>
+                <input
+                  value="2"
+                  name="rating-6"
+                  id="star2-6"
+                  type="radio"
+                /><label for="star2-6"></label>
+                <input
+                  value="1"
+                  name="rating-6"
+                  id="star1-6"
+                  type="radio"
+                /><label for="star1-6"></label>
+              </div>
+            </div>
+
+            <div class="flex justify-between items-end mb-4">
+              <div>
+                <p class="text-xs text-gray-400 mb-1">Цена:</p>
+                <p class="text-lg font-bold text-[#ff0099]">551 250 UZS</p>
+              </div>
+              <span
+                class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold"
+                >Rapoo</span
+              >
+            </div>
+
+            <button
+              class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span class="font-medium">В корзину</span>
+            </button>
+          </div>
+           </a>
+
+       <a href="https://upg.uz/product/rapoo-v500-pro-beige-grey-3731">
+           <div
+            class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+          >
+            <div class="absolute top-4 right-4 z-10">
+              <button
+                class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="h-48 flex items-center justify-center mb-4">
+              <img
+                src="../images/3f74fca13b5b0a96e4490370d492c01cc6b5b2e200cdf3536f2f69f9806fae25.webp"
+                alt="Laptop"
+                class="object-contain max-h-full"
+              />
+            </div>
+
+            <h3
+              class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
+            >
+              Dark Project ALU87 Daylight
+            </h3>
+
+            <div class="flex mb-4">
+              <div class="rating">
+                <input
+                  value="5"
+                  name="rating-7"
+                  id="star5-7"
+                  type="radio"
+                /><label for="star5-7"></label>
+                <input
+                  value="4"
+                  name="rating-7"
+                  id="star4-7"
+                  type="radio"
+                /><label for="star4-7"></label>
+                <input
+                  value="3"
+                  name="rating-7"
+                  id="star3-7"
+                  type="radio"
+                /><label for="star3-7"></label>
+                <input
+                  value="2"
+                  name="rating-7"
+                  id="star2-7"
+                  type="radio"
+                /><label for="star2-7"></label>
+                <input
+                  value="1"
+                  name="rating-7"
+                  id="star1-7"
+                  type="radio"
+                /><label for="star1-7"></label>
+              </div>
+            </div>
+
+            <div class="flex justify-between items-end mb-4">
+              <div>
+                <p class="text-xs text-gray-400 mb-1">Цена:</p>
+                <p class="text-lg font-bold text-[#ff0099]">551 250 UZS</p>
+              </div>
+              <span
+                class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
+                >Rapoo</span
+              >
+            </div>
+
+            <button
+              class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span class="font-medium text-sm">В корзину</span>
+            </button>
+          </div>
+       </a>
+
+          <a href="https://upg.uz/product/rapoo-v500pro-87-black-6022">
+            <div
+            class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+          >
+            <div class="absolute top-4 right-4 z-10">
+              <button
+                class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="h-48 flex items-center justify-center mb-4">
+              <img
+                src="../images/c6c0eb14f3c935e85060843ae78a810bd93acc3f0ffdf74e9f3b2b8925fde791.webp"
+                alt="Laptop"
+                class="object-contain max-h-full"
+              />
+            </div>
+
+            <h3
+              class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
+            >
+             Rapoo V500PRO-87 Black
+
+ 
+            </h3>
+
+            <div class="flex mb-4">
+              <div class="rating">
+                <input
+                  value="5"
+                  name="rating-8"
+                  id="star5-8"
+                  type="radio"
+                /><label for="star5-8"></label>
+                <input
+                  value="4"
+                  name="rating-8"
+                  id="star4-8"
+                  type="radio"
+                /><label for="star4-8"></label>
+                <input
+                  value="3"
+                  name="rating-8"
+                  id="star3-8"
+                  type="radio"
+                /><label for="star3-8"></label>
+                <input
+                  value="2"
+                  name="rating-8"
+                  id="star2-8"
+                  type="radio"
+                /><label for="star2-8"></label>
+                <input
+                  value="1"
+                  name="rating-8"
+                  id="star1-8"
+                  type="radio"
+                /><label for="star1-8"></label>
+              </div>
+            </div>
+
+            <div class="flex justify-between items-end mb-4">
+              <div>
+                <p class="text-xs text-gray-400 mb-1">Цена:</p>
+                <p class="text-lg font-bold text-[#ff0099]">490 000 UZS</p>
+              </div>
+              <span
+                class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
+                >Asus</span
+              >
+            </div>
+
+            <button
+              class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span class="font-medium text-sm">В корзину</span>
+            </button>
+          </div>
+          </a>
+
+        <a href="https://upg.uz/product/rapoo-v500pro-87-white-5862">  <div
+            class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+          >
+            <div class="absolute top-4 right-4 z-10">
+              <button
+                class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="h-48 flex items-center justify-center mb-4">
+              <img
+                src="../images/6fd038af007ea8e4b2cdcbfc1b9278ff91bac984cf05cda9023e05de5c59c3a6.webp"
+                alt="Gaming Laptop"
+                class="object-contain max-h-full"
+              />
+            </div>
+
+            <h3
+              class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
+            >
+             Rapoo V500Pro-87 White
+
+ 
+            </h3>
+
+            <div class="flex mb-4">
+              <div class="rating">
+                <input
+                  value="5"
+                  name="rating-9"
+                  id="star5-9"
+                  type="radio"
+                /><label for="star5-9"></label>
+                <input
+                  value="4"
+                  name="rating-9"
+                  id="star4-9"
+                  type="radio"
+                /><label for="star4-9"></label>
+                <input
+                  value="3"
+                  name="rating-9"
+                  id="star3-9"
+                  type="radio"
+                /><label for="star3-9"></label>
+                <input
+                  value="2"
+                  name="rating-9"
+                  id="star2-9"
+                  type="radio"
+                /><label for="star2-9"></label>
+                <input
+                  value="1"
+                  name="rating-9"
+                  id="star1-9"
+                  type="radio"
+                /><label for="star1-9"></label>
+              </div>
+            </div>
+
+            <div class="flex justify-between items-end mb-4">
+              <div>
+                <p class="text-xs text-gray-400 mb-1">Цена:</p>
+                <p class="text-lg font-bold text-[#ff0099]">490 000 UZS</p>
+              </div>
+              <span
+                class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
+                >Rapoo</span
+              >
+            </div>
+
+            <button
+              class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span class="font-medium text-sm">В корзину</span>
+            </button>
+          </div>
+        </a>
+          <a href="../pages for pace/asus2.html">
+            <div
+              class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+            >
+              <div class="absolute top-4 right-4 z-10">
+                <button
+                  class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="h-48 flex items-center justify-center mb-4">
+                <img
+                  src="../images/monitor2.webp"
                   alt="Laptop"
                   class="object-contain max-h-full"
                 />
@@ -1047,10 +1796,9 @@ if (localStorage.getItem('theme') === 'dark') {
             </div>
           </a>
 
-          <a  href="./pages for pace/asus1.html">
+          <a href="../pages for pace/asus1.html">
             <div
-          data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+              class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
             >
               <div class="absolute top-4 right-4 z-10">
                 <button
@@ -1075,7 +1823,7 @@ if (localStorage.getItem('theme') === 'dark') {
 
               <div class="h-48 flex items-center justify-center mb-4">
                 <img
-                  src="./images/monitor-3.webp"
+                  src="../images/monitor-3.webp"
                   alt="Laptop"
                   class="object-contain max-h-full"
                 />
@@ -1155,10 +1903,9 @@ if (localStorage.getItem('theme') === 'dark') {
             </div></a
           >
 
-          <a   href="./pages for pace/asus3.html">
+          <a href="../pages for pace/asus3.html">
             <div
-          data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+              class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
             >
               <div class="absolute top-4 right-4 z-10">
                 <button
@@ -1183,7 +1930,7 @@ if (localStorage.getItem('theme') === 'dark') {
 
               <div class="h-48 flex items-center justify-center mb-4">
                 <img
-                  src="./images/monitor-4.webp"
+                  src="../images/monitor-4.webp"
                   alt="Gaming Laptop"
                   class="object-contain max-h-full"
                 />
@@ -1263,10 +2010,9 @@ if (localStorage.getItem('theme') === 'dark') {
             </div>
           </a>
 
-          <a   href="./pages for pace/asus2.html">
+          <a href="../pages for pace/asus2.html">
             <div
-          data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+              class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
             >
               <div class="absolute top-4 right-4 z-10">
                 <button
@@ -1291,7 +2037,7 @@ if (localStorage.getItem('theme') === 'dark') {
 
               <div class="h-48 flex items-center justify-center mb-4">
                 <img
-                  src="./images/monitor-5.webp"
+                  src="../images/monitor-5.webp"
                   alt="Brateck"
                   class="object-contain max-h-full"
                 />
@@ -1371,123 +2117,23 @@ if (localStorage.getItem('theme') === 'dark') {
             </div>
           </a>
         </div>
-      </div>
-      <div class="max-w-[1480px] mx-auto p-4 font-sans">
-        <!-- IKKINCHI QATOR  -->
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
-        >
-         
+            </p>
+          </div>
 
           <div
-        data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+            class="hidden p-4 rounded-lg bg-gray-50"
+            id="peripherals"
+            role="tabpanel"
+            aria-labelledby="peripherals-tab"
           >
-            <div class="absolute top-4 right-4 z-10">
-              <button
-                class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                  />
-                </svg>
-              </button>
-            </div>
-
-            <div class="h-48 flex items-center justify-center mb-4">
-              <img
-                src="./images/klavish5.webp"
-                alt="Brateck"
-                class="object-contain max-h-full"
-              />
-            </div>
-
-            <h3
-              class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
-            >
-              GravaStar Mercury M2 Wireless Stealth Black
-            </h3>
-
-            <div class="flex mb-4">
-              <div class="rating">
-                <input
-                  value="5"
-                  name="rating-10"
-                  id="star5-10"
-                  type="radio"
-                /><label for="star5-10"></label>
-                <input
-                  value="4"
-                  name="rating-10"
-                  id="star4-10"
-                  type="radio"
-                /><label for="star4-10"></label>
-                <input
-                  value="3"
-                  name="rating-10"
-                  id="star3-10"
-                  type="radio"
-                /><label for="star3-10"></label>
-                <input
-                  value="2"
-                  name="rating-10"
-                  id="star2-10"
-                  type="radio"
-                /><label for="star2-10"></label>
-                <input
-                  value="1"
-                  name="rating-10"
-                  id="star1-10"
-                  type="radio"
-                /><label for="star1-10"></label>
-              </div>
-            </div>
-
-            <div class="flex justify-between items-end mb-4">
-              <div>
-                <p class="text-xs text-gray-400 mb-1">Цена:</p>
-                <p class="text-lg font-bold text-[#ff0099]">799 000 UZS</p>
-              </div>
-              <span
-                class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
-                >Grava star</span
-              >
-            </div>
-
-            <button
-              class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                />
-              </svg>
-              <span class="font-medium text-sm">В корзину</span>
-            </button>
-          </div>
-           <a  href="../pages for pace/monitor.html">
+            <p class="text-center text-gray-500 py-10">
+              Sichqoncha va klaviaturalar...
+               <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4"
+        >
+          <a href="../pages for pace/monitor.html">
             <div
-          data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+              class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
             >
               <div class="absolute top-4 right-4 flex flex-col gap-2 z-10">
                 <button
@@ -1591,10 +2237,9 @@ if (localStorage.getItem('theme') === 'dark') {
               </button>
             </div>
           </a>
-           <a  href="../pages for pace/monitor.html">
+           <a href="../pages for pace/monitor.html">
             <div
-          data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+              class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
             >
               <div class="absolute top-4 right-4 flex flex-col gap-2 z-10">
                 <button
@@ -1698,10 +2343,9 @@ if (localStorage.getItem('theme') === 'dark') {
               </button>
             </div>
           </a>
-           <a  href="../pages for pace/monitor.html">
+           <a href="../pages for pace/monitor.html">
             <div
-          data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+              class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
             >
               <div class="absolute top-4 right-4 flex flex-col gap-2 z-10">
                 <button
@@ -1805,10 +2449,9 @@ if (localStorage.getItem('theme') === 'dark') {
               </button>
             </div>
           </a>
-           <a  href="../pages for pace/monitor.html">
+           <a href="../pages for pace/monitor.html">
             <div
-          data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+              class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
             >
               <div class="absolute top-4 right-4 flex flex-col gap-2 z-10">
                 <button
@@ -1912,568 +2555,9 @@ if (localStorage.getItem('theme') === 'dark') {
               </button>
             </div>
           </a>
-        </div>
-      </div>
-      <!-- Muhimlari  -->
-      <div class="max-w-[1480px] mx-auto p-4 font-sans">
-        <h2
-          class="text-2xl font-black uppercase r mb-8 text-gray-900 italic"
-        >
-          Лучшие предложения
-        </h2>
-
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
-        >
-          <a   href="">
+          <!-- klavish  -->
             <div
-          data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
-            >
-              <div class="absolute top-4 right-4 flex flex-col gap-2 z-10">
-                <button
-                  class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    />
-                  </svg>
-                </button>
-              </div>
-
-              <div class="h-48 flex items-center justify-center mb-4">
-                <img
-                  src="./images/kovrik.webp"
-                  alt="Monitor"
-                  class="object-contain max-h-full"
-                />
-              </div>
-
-              <h3
-                class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
-              >
-                2E Gaming Pro Speed XL D01
-              </h3>
-
-              <div class="flex mb-4">
-                <div class="rating">
-                  <input
-                    value="4"
-                    name="rating-22"
-                    id="star4-22"
-                    type="radio"
-                  /><label for="star4-22"></label>
-                  <input
-                    value="3"
-                    name="rating-22"
-                    id="star3-22"
-                    type="radio"
-                  /><label for="star3-22"></label>
-                  <input
-                    value="5"
-                    name="rating-22"
-                    id="star5-22"
-                    type="radio"
-                  /><label for="star5-22"></label>
-                  <input
-                    value="2"
-                    name="rating-22"
-                    id="star2-22"
-                    type="radio"
-                  /><label for="star2-22"></label>
-                  <input
-                    value="1"
-                    name="rating-22"
-                    id="star1-22"
-                    type="radio"
-                  /><label for="star1-22"></label>
-                </div>
-              </div>
-
-              <div class="flex justify-between items-end mb-4">
-                <div>
-                  <p class="text-xs text-gray-400 mb-1">Цена:</p>
-                  <p class="text-lg font-bold text-[#ff0099]">179 000 UZS</p>
-                </div>
-                <span
-                  class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold"
-                  >2E Gaming</span
-                >
-              </div>
-
-              <button
-                class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2 transition-colors"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-                <span class="font-medium">В корзину</span>
-              </button>
-            </div>
-          </a>
-
-          <a  href="">
-            <div
-          data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
-            >
-              <div class="absolute top-4 right-4 z-10">
-                <button
-                  class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    />
-                  </svg>
-                </button>
-              </div>
-
-              <div class="h-48 flex items-center justify-center mb-4">
-                <img
-                  src="./images/klavish6.webp"
-                  alt="Laptop"
-                  class="object-contain max-h-full"
-                />
-              </div>
-
-              <h3
-                class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
-              >
-                AKKO 3087 Horizon, Cherry MX Red, RU
-              </h3>
-
-              <div class="flex mb-4">
-                <div class="rating">
-                  <input
-                    value="5"
-                    name="rating-23"
-                    id="star5-23"
-                    type="radio"
-                  /><label for="star5-23"></label>
-                  <input
-                    value="4"
-                    name="rating-23"
-                    id="star4-23"
-                    type="radio"
-                  /><label for="star4-23"></label>
-                  <input
-                    value="3"
-                    name="rating-23"
-                    id="star3-23"
-                    type="radio"
-                  /><label for="star3-23"></label>
-                  <input
-                    value="2"
-                    name="rating-23"
-                    id="star2-23"
-                    type="radio"
-                  /><label for="star2-23"></label>
-                  <input
-                    value="1"
-                    name="rating-23"
-                    id="star1-23"
-                    type="radio"
-                  /><label for="star1-23"></label>
-                </div>
-              </div>
-
-              <div class="flex justify-between items-end mb-4">
-                <div>
-                  <p class="text-xs text-gray-400 mb-1">Цена:</p>
-                  <p class="text-lg font-bold text-[#ff0099]">732 000 UZS</p>
-                </div>
-                <span
-                  class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
-                  >Asus</span
-                >
-              </div>
-
-              <button
-                class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-                <span class="font-medium text-sm">В корзину</span>
-              </button>
-            </div>
-          </a>
-
-          <a  href="">
-            <div
-          data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
-            >
-              <div class="absolute top-4 right-4 z-10">
-                <button
-                  class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    />
-                  </svg>
-                </button>
-              </div>
-
-              <div class="h-48 flex items-center justify-center mb-4">
-                <img
-                  src="./images/router.webp"
-                  alt="Laptop"
-                  class="object-contain max-h-full"
-                />
-              </div>
-
-              <h3
-                class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
-              >
-                Asus AiMesh RT-AX92U (2Pack)
-              </h3>
-
-              <div class="flex mb-4">
-                <div class="rating">
-                  <input
-                    value="5"
-                    name="rating-24"
-                    id="star5-24"
-                    type="radio"
-                  /><label for="star5-24"></label>
-                  <input
-                    value="4"
-                    name="rating-24"
-                    id="star4-24"
-                    type="radio"
-                  /><label for="star4-24"></label>
-                  <input
-                    value="3"
-                    name="rating-24"
-                    id="star3-24"
-                    type="radio"
-                  /><label for="star3-24"></label>
-                  <input
-                    value="2"
-                    name="rating-24"
-                    id="star2-24"
-                    type="radio"
-                  /><label for="star2-24"></label>
-                  <input
-                    value="1"
-                    name="rating-24"
-                    id="star1-24"
-                    type="radio"
-                  /><label for="star1-24"></label>
-                </div>
-              </div>
-
-              <div class="flex justify-between items-end mb-4">
-                <div>
-                  <p class="text-xs text-gray-400 mb-1">Цена:</p>
-                  <p class="text-lg font-bold text-[#ff0099]">1 812 000 UZS</p>
-                </div>
-                <span
-                  class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
-                  >Asus</span
-                >
-              </div>
-
-              <button
-                class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-                <span class="font-medium text-sm">В корзину</span>
-              </button>
-            </div></a
-          >
-
-          <a  href=" ">
-            <div
-          data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
-            >
-              <div class="absolute top-4 right-4 z-10">
-                <button
-                  class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    />
-                  </svg>
-                </button>
-              </div>
-
-              <div class="h-48 flex items-center justify-center mb-4">
-                <img
-                  src="./images/cave.webp"
-                  alt="Gaming Laptop"
-                  class="object-contain max-h-full"
-                />
-              </div>
-
-              <h3
-                class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
-              >
-                Asus Blue Cave AC2600
-              </h3>
-
-              <div class="flex mb-4">
-                <div class="rating">
-                  <input
-                    value="5"
-                    name="rating-25"
-                    id="star5-25"
-                    type="radio"
-                  /><label for="star5-25"></label>
-                  <input
-                    value="4"
-                    name="rating-25"
-                    id="star4-25"
-                    type="radio"
-                  /><label for="star4-25"></label>
-                  <input
-                    value="3"
-                    name="rating-25"
-                    id="star3-25"
-                    type="radio"
-                  /><label for="star3-25"></label>
-                  <input
-                    value="2"
-                    name="rating-25"
-                    id="star2-25"
-                    type="radio"
-                  /><label for="star2-25"></label>
-                  <input
-                    value="1"
-                    name="rating-25"
-                    id="star1-25"
-                    type="radio"
-                  /><label for="star1-25"></label>
-                </div>
-              </div>
-
-              <div class="flex justify-between items-end mb-4">
-                <div>
-                  <p class="text-xs text-gray-400 mb-1">Цена:</p>
-                  <p class="text-lg font-bold text-[#ff0099]">619 500 UZS</p>
-                </div>
-                <span
-                  class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
-                  >Asus</span
-                >
-              </div>
-
-              <button
-                class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-                <span class="font-medium text-sm">В корзину</span>
-              </button>
-            </div>
-          </a>
-
-          <a  href="">
-            <div
-          data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
-            >
-              <div class="absolute top-4 right-4 z-10">
-                <button
-                  class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    />
-                  </svg>
-                </button>
-              </div>
-
-              <div class="h-48 flex items-center justify-center mb-4">
-                <img
-                  src="./images/naushnik.webp"
-                  alt="Brateck"
-                  class="object-contain max-h-full"
-                />
-              </div>
-
-              <h3
-                class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
-              >
-                Edifier Hecate G2 BT Grey Gris
-              </h3>
-
-              <div class="flex mb-4">
-                <div class="rating">
-                  <input
-                    value="5"
-                    name="rating-26"
-                    id="star5-26"
-                    type="radio"
-                  /><label for="star5-26"></label>
-                  <input
-                    value="4"
-                    name="rating-26"
-                    id="star4-26"
-                    type="radio"
-                  /><label for="star4-26"></label>
-                  <input
-                    value="3"
-                    name="rating-26"
-                    id="star3-26"
-                    type="radio"
-                  /><label for="star3-26"></label>
-                  <input
-                    value="2"
-                    name="rating-26"
-                    id="star2-26"
-                    type="radio"
-                  /><label for="star2-26"></label>
-                  <input
-                    value="1"
-                    name="rating-26"
-                    id="star1-26"
-                    type="radio"
-                  /><label for="star1-26"></label>
-                </div>
-              </div>
-
-              <div class="flex justify-between items-end mb-4">
-                <div>
-                  <p class="text-xs text-gray-400 mb-1">Цена:</p>
-                  <p class="text-lg font-bold text-[#ff0099]">369 000 UZS</p>
-                </div>
-                <span
-                  class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
-                  >Brateck</span
-                >
-              </div>
-
-              <button
-                class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-                <span class="font-medium text-sm">В корзину</span>
-              </button>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="max-w-[1480px] mx-auto p-4 font-sans">
-        <!-- IKKINCHI QATOR  -->
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
-        >
-          <div
-        data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+            class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
           >
             <div class="absolute top-4 right-4 flex flex-col gap-2 z-10">
               <button
@@ -2498,7 +2582,7 @@ if (localStorage.getItem('theme') === 'dark') {
 
             <div class="h-48 flex items-center justify-center mb-4">
               <img
-                src="./images/klavish7.webp"
+                src="../images/klavish.webp"
                 alt="Monitor"
                 class="object-contain max-h-full"
               />
@@ -2507,48 +2591,48 @@ if (localStorage.getItem('theme') === 'dark') {
             <h3
               class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
             >
-              GravaStar Mercury V75 Pro Special Edition Neon Graffiti
+              Dark Project ALU87 Bushido Black White (DPKB-BUSHIDO-87)
             </h3>
 
             <div class="flex mb-4">
               <div class="rating">
                 <input
                   value="5"
-                  name="rating-66"
-                  id="star5-66"
+                  name="rating-6"
+                  id="star5-6"
                   type="radio"
-                /><label for="star5-66"></label>
+                /><label for="star5-6"></label>
                 <input
                   value="4"
-                  name="rating-66"
-                  id="star4-66"
+                  name="rating-6"
+                  id="star4-6"
                   type="radio"
-                /><label for="star4-66"></label>
+                /><label for="star4-6"></label>
                 <input
                   value="3"
-                  name="rating-66"
-                  id="star3-66"
+                  name="rating-6"
+                  id="star3-6"
                   type="radio"
-                /><label for="star3-66"></label>
+                /><label for="star3-6"></label>
                 <input
                   value="2"
-                  name="rating-66"
-                  id="star2-66"
+                  name="rating-6"
+                  id="star2-6"
                   type="radio"
-                /><label for="star2-66"></label>
+                /><label for="star2-6"></label>
                 <input
                   value="1"
-                  name="rating-66"
-                  id="star1-66"
+                  name="rating-6"
+                  id="star1-6"
                   type="radio"
-                /><label for="star1-66"></label>
+                /><label for="star1-6"></label>
               </div>
             </div>
 
             <div class="flex justify-between items-end mb-4">
               <div>
                 <p class="text-xs text-gray-400 mb-1">Цена:</p>
-                <p class="text-lg font-bold text-[#ff0099]">2 266 000 UZS</p>
+                <p class="text-lg font-bold text-[#ff0099]">1 285 000 UZS</p>
               </div>
               <span
                 class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold"
@@ -2578,8 +2662,7 @@ if (localStorage.getItem('theme') === 'dark') {
           </div>
 
           <div
-        data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+            class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
           >
             <div class="absolute top-4 right-4 z-10">
               <button
@@ -2604,7 +2687,7 @@ if (localStorage.getItem('theme') === 'dark') {
 
             <div class="h-48 flex items-center justify-center mb-4">
               <img
-                src="./images/klavish8.webp"
+                src="../images/klavish2.webp"
                 alt="Laptop"
                 class="object-contain max-h-full"
               />
@@ -2613,48 +2696,48 @@ if (localStorage.getItem('theme') === 'dark') {
             <h3
               class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
             >
-              Keychron V1 ANSI 75% 84 Key Frosted Black Full Assembled Knob
+              Dark Project ALU87 Daylight
             </h3>
 
             <div class="flex mb-4">
               <div class="rating">
                 <input
                   value="5"
-                  name="rating-77"
-                  id="star5-77"
+                  name="rating-7"
+                  id="star5-7"
                   type="radio"
-                /><label for="star5-77"></label>
+                /><label for="star5-7"></label>
                 <input
                   value="4"
-                  name="rating-77"
-                  id="star4-77"
+                  name="rating-7"
+                  id="star4-7"
                   type="radio"
-                /><label for="star4-77"></label>
+                /><label for="star4-7"></label>
                 <input
                   value="3"
-                  name="rating-77"
-                  id="star3-77"
+                  name="rating-7"
+                  id="star3-7"
                   type="radio"
-                /><label for="star3-77"></label>
+                /><label for="star3-7"></label>
                 <input
                   value="2"
-                  name="rating-77"
-                  id="star2-77"
+                  name="rating-7"
+                  id="star2-7"
                   type="radio"
-                /><label for="star2-77"></label>
+                /><label for="star2-7"></label>
                 <input
                   value="1"
-                  name="rating-77"
-                  id="star1-77"
+                  name="rating-7"
+                  id="star1-7"
                   type="radio"
-                /><label for="star1-77"></label>
+                /><label for="star1-7"></label>
               </div>
             </div>
 
             <div class="flex justify-between items-end mb-4">
               <div>
                 <p class="text-xs text-gray-400 mb-1">Цена:</p>
-                <p class="text-lg font-bold text-[#ff0099]">969 000 UZS</p>
+                <p class="text-lg font-bold text-[#ff0099]">1 116 000 UZS</p>
               </div>
               <span
                 class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
@@ -2684,8 +2767,7 @@ if (localStorage.getItem('theme') === 'dark') {
           </div>
 
           <div
-        data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+            class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
           >
             <div class="absolute top-4 right-4 z-10">
               <button
@@ -2710,7 +2792,7 @@ if (localStorage.getItem('theme') === 'dark') {
 
             <div class="h-48 flex items-center justify-center mb-4">
               <img
-                src="./images/naushnik2.webp"
+                src="../images/klavish3.webp"
                 alt="Laptop"
                 class="object-contain max-h-full"
               />
@@ -2719,48 +2801,48 @@ if (localStorage.getItem('theme') === 'dark') {
             <h3
               class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
             >
-              Logitech G PRO X Wireless
+              Dark Project ALU87 Midnight
             </h3>
 
             <div class="flex mb-4">
               <div class="rating">
                 <input
                   value="5"
-                  name="rating-88"
-                  id="star5-88"
+                  name="rating-8"
+                  id="star5-8"
                   type="radio"
-                /><label for="star5-88"></label>
+                /><label for="star5-8"></label>
                 <input
                   value="4"
-                  name="rating-88"
-                  id="star4-88"
+                  name="rating-8"
+                  id="star4-8"
                   type="radio"
-                /><label for="star4-88"></label>
+                /><label for="star4-8"></label>
                 <input
                   value="3"
-                  name="rating-88"
-                  id="star3-88"
+                  name="rating-8"
+                  id="star3-8"
                   type="radio"
-                /><label for="star3-88"></label>
+                /><label for="star3-8"></label>
                 <input
                   value="2"
-                  name="rating-88"
-                  id="star2-88"
+                  name="rating-8"
+                  id="star2-8"
                   type="radio"
-                /><label for="star2-88"></label>
+                /><label for="star2-8"></label>
                 <input
                   value="1"
-                  name="rating-88"
-                  id="star1-88"
+                  name="rating-8"
+                  id="star1-8"
                   type="radio"
-                /><label for="star1-88"></label>
+                /><label for="star1-8"></label>
               </div>
             </div>
 
             <div class="flex justify-between items-end mb-4">
               <div>
                 <p class="text-xs text-gray-400 mb-1">Цена:</p>
-                <p class="text-lg font-bold text-[#ff0099]">1 952 000 UZS</p>
+                <p class="text-lg font-bold text-[#ff0099]">1 116 000 UZS</p>
               </div>
               <span
                 class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
@@ -2790,8 +2872,7 @@ if (localStorage.getItem('theme') === 'dark') {
           </div>
 
           <div
-        data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+            class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
           >
             <div class="absolute top-4 right-4 z-10">
               <button
@@ -2816,7 +2897,7 @@ if (localStorage.getItem('theme') === 'dark') {
 
             <div class="h-48 flex items-center justify-center mb-4">
               <img
-                src="./images/rul.webp"
+                src="../images/klavish4.webp"
                 alt="Gaming Laptop"
                 class="object-contain max-h-full"
               />
@@ -2825,48 +2906,682 @@ if (localStorage.getItem('theme') === 'dark') {
             <h3
               class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
             >
-              Logitech G923 Racing Wheel (Руль)
+              Dark Project KD68 Sunrise
             </h3>
 
             <div class="flex mb-4">
               <div class="rating">
                 <input
                   value="5"
-                  name="rating-99"
-                  id="star5-99"
+                  name="rating-9"
+                  id="star5-9"
                   type="radio"
-                /><label for="star5-99"></label>
+                /><label for="star5-9"></label>
                 <input
                   value="4"
-                  name="rating-99"
-                  id="star4-99"
+                  name="rating-9"
+                  id="star4-9"
                   type="radio"
-                /><label for="star4-99"></label>
+                /><label for="star4-9"></label>
                 <input
                   value="3"
-                  name="rating-99"
-                  id="star3-99"
+                  name="rating-9"
+                  id="star3-9"
                   type="radio"
-                /><label for="star3-99"></label>
+                /><label for="star3-9"></label>
                 <input
                   value="2"
-                  name="rating-99"
-                  id="star2-99"
+                  name="rating-9"
+                  id="star2-9"
                   type="radio"
-                /><label for="star2-99"></label>
+                /><label for="star2-9"></label>
                 <input
                   value="1"
-                  name="rating-99"
-                  id="star1-99"
+                  name="rating-9"
+                  id="star1-9"
                   type="radio"
-                /><label for="star1-99"></label>
+                /><label for="star1-9"></label>
               </div>
             </div>
 
             <div class="flex justify-between items-end mb-4">
               <div>
                 <p class="text-xs text-gray-400 mb-1">Цена:</p>
-                <p class="text-lg font-bold text-[#ff0099]">5 445 000 UZS</p>
+                <p class="text-lg font-bold text-[#ff0099]">1 211 000 UZS</p>
+              </div>
+              <span
+                class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
+                >Dark project</span
+              >
+            </div>
+
+            <button
+              class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span class="font-medium text-sm">В корзину</span>
+            </button>
+          </div>
+           <a href="../pages for pace/monitor.html">
+            <div
+              class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+            >
+              <div class="absolute top-4 right-4 flex flex-col gap-2 z-10">
+                <button
+                  class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="h-48 flex items-center justify-center mb-4">
+                <img
+                  src="../images/mishka1.webp"
+                  alt="Monitor"
+                  class="object-contain max-h-full"
+                />
+              </div>
+
+              <h3
+                class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
+              >
+                2E Gaming R2723BV 27" 165Hz VA (Curved)
+              </h3>
+
+              <div class="flex mb-4">
+                <div class="rating">
+                  <input
+                    value="5"
+                    name="rating-1"
+                    id="star5-1"
+                    type="radio"
+                  /><label for="star5-1"></label>
+                  <input
+                    value="4"
+                    name="rating-1"
+                    id="star4-1"
+                    type="radio"
+                  /><label for="star4-1"></label>
+                  <input
+                    value="3"
+                    name="rating-1"
+                    id="star3-1"
+                    type="radio"
+                  /><label for="star3-1"></label>
+                  <input
+                    value="2"
+                    name="rating-1"
+                    id="star2-1"
+                    type="radio"
+                  /><label for="star2-1"></label>
+                  <input
+                    value="1"
+                    name="rating-1"
+                    id="star1-1"
+                    type="radio"
+                  /><label for="star1-1"></label>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-end mb-4">
+                <div>
+                  <p class="text-xs text-gray-400 mb-1">Цена:</p>
+                  <p class="text-lg font-bold text-[#ff0099]">250 000 UZS</p>
+                </div>
+                <span
+                  class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold"
+                  >2E Gaming</span
+                >
+              </div>
+
+              <button
+                class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <span class="font-medium">В корзину</span>
+              </button>
+            </div>
+          </a>
+           <a href="../pages for pace/monitor.html">
+            <div
+              class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+            >
+              <div class="absolute top-4 right-4 flex flex-col gap-2 z-10">
+                <button
+                  class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="h-48 flex items-center justify-center mb-4  ">
+                <img
+                  src="../images/mishka2.webp"
+                  alt="Monitor"
+                  class="object-contain max-h-full"
+                />
+              </div>
+
+              <h3
+                class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
+              >
+                2E Gaming R2723BV 27" 165Hz VA (Curved)
+              </h3>
+
+              <div class="flex mb-4">
+                <div class="rating">
+                  <input
+                    value="5"
+                    name="rating-1"
+                    id="star5-1"
+                    type="radio"
+                  /><label for="star5-1"></label>
+                  <input
+                    value="4"
+                    name="rating-1"
+                    id="star4-1"
+                    type="radio"
+                  /><label for="star4-1"></label>
+                  <input
+                    value="3"
+                    name="rating-1"
+                    id="star3-1"
+                    type="radio"
+                  /><label for="star3-1"></label>
+                  <input
+                    value="2"
+                    name="rating-1"
+                    id="star2-1"
+                    type="radio"
+                  /><label for="star2-1"></label>
+                  <input
+                    value="1"
+                    name="rating-1"
+                    id="star1-1"
+                    type="radio"
+                  /><label for="star1-1"></label>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-end mb-4">
+                <div>
+                  <p class="text-xs text-gray-400 mb-1">Цена:</p>
+                  <p class="text-lg font-bold text-[#ff0099]">360 000 UZS</p>
+                </div>
+                <span
+                  class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold"
+                  >2E Gaming</span
+                >
+              </div>
+
+              <button
+                class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <span class="font-medium">В корзину</span>
+              </button>
+            </div>
+          </a>
+           <a href="../pages for pace/monitor.html">
+            <div
+              class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+            >
+              <div class="absolute top-4 right-4 flex flex-col gap-2 z-10">
+                <button
+                  class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="h-48 flex items-center justify-center mb-4">
+                <img
+                  src="../images/5c35b9f225df3b8e4aebfdd44403659562f05e90127f88ad48640bc168abbefb.webp"
+                  alt="Monitor"
+                  class="object-contain max-h-full"
+                />
+              </div>
+
+              <h3
+                class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
+              >
+                2E Gaming R2723BV 27" 165Hz VA (Curved)
+              </h3>
+
+              <div class="flex mb-4">
+                <div class="rating">
+                  <input
+                    value="5"
+                    name="rating-1"
+                    id="star5-1"
+                    type="radio"
+                  /><label for="star5-1"></label>
+                  <input
+                    value="4"
+                    name="rating-1"
+                    id="star4-1"
+                    type="radio"
+                  /><label for="star4-1"></label>
+                  <input
+                    value="3"
+                    name="rating-1"
+                    id="star3-1"
+                    type="radio"
+                  /><label for="star3-1"></label>
+                  <input
+                    value="2"
+                    name="rating-1"
+                    id="star2-1"
+                    type="radio"
+                  /><label for="star2-1"></label>
+                  <input
+                    value="1"
+                    name="rating-1"
+                    id="star1-1"
+                    type="radio"
+                  /><label for="star1-1"></label>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-end mb-4">
+                <div>
+                  <p class="text-xs text-gray-400 mb-1">Цена:</p>
+                  <p class="text-lg font-bold text-[#ff0099]">250 000 UZS</p>
+                </div>
+                <span
+                  class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold"
+                  >2E Gaming</span
+                >
+              </div>
+
+              <button
+                class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <span class="font-medium">В корзину</span>
+              </button>
+            </div>
+          </a>
+           <a href="../pages for pace/monitor.html">
+            <div
+              class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+            >
+              <div class="absolute top-4 right-4 flex flex-col gap-2 z-10">
+                <button
+                  class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="h-48 flex items-center justify-center mb-4">
+                <img
+                  src="../images/46f1dadd32780298ef01e798994166ca5c39f3798746a4d38c4236ac3ede6127.webp"
+                  alt="Monitor"
+                  class="object-contain max-h-full"
+                />
+              </div>
+
+              <h3
+                class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
+              >
+                2E Gaming R2723BV 27" 165Hz VA (Curved)
+              </h3>
+
+              <div class="flex mb-4">
+                <div class="rating">
+                  <input
+                    value="5"
+                    name="rating-1"
+                    id="star5-1"
+                    type="radio"
+                  /><label for="star5-1"></label>
+                  <input
+                    value="4"
+                    name="rating-1"
+                    id="star4-1"
+                    type="radio"
+                  /><label for="star4-1"></label>
+                  <input
+                    value="3"
+                    name="rating-1"
+                    id="star3-1"
+                    type="radio"
+                  /><label for="star3-1"></label>
+                  <input
+                    value="2"
+                    name="rating-1"
+                    id="star2-1"
+                    type="radio"
+                  /><label for="star2-1"></label>
+                  <input
+                    value="1"
+                    name="rating-1"
+                    id="star1-1"
+                    type="radio"
+                  /><label for="star1-1"></label>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-end mb-4">
+                <div>
+                  <p class="text-xs text-gray-400 mb-1">Цена:</p>
+                  <p class="text-lg font-bold text-[#ff0099]">80 000 UZS</p>
+                </div>
+                <span
+                  class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold"
+                  >2E Gaming</span
+                >
+              </div>
+
+              <button
+                class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <span class="font-medium">В корзину</span>
+              </button>
+            </div>
+          </a>
+          <!-- klavish  -->
+            <div
+            class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+          >
+            <div class="absolute top-4 right-4 flex flex-col gap-2 z-10">
+              <button
+                class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="h-48 flex items-center justify-center mb-4">
+              <img
+                src="../images/klavish.webp"
+                alt="Monitor"
+                class="object-contain max-h-full"
+              />
+            </div>
+
+            <h3
+              class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
+            >
+              Dark Project ALU87 Bushido Black White (DPKB-BUSHIDO-87)
+            </h3>
+
+            <div class="flex mb-4">
+              <div class="rating">
+                <input
+                  value="5"
+                  name="rating-6"
+                  id="star5-6"
+                  type="radio"
+                /><label for="star5-6"></label>
+                <input
+                  value="4"
+                  name="rating-6"
+                  id="star4-6"
+                  type="radio"
+                /><label for="star4-6"></label>
+                <input
+                  value="3"
+                  name="rating-6"
+                  id="star3-6"
+                  type="radio"
+                /><label for="star3-6"></label>
+                <input
+                  value="2"
+                  name="rating-6"
+                  id="star2-6"
+                  type="radio"
+                /><label for="star2-6"></label>
+                <input
+                  value="1"
+                  name="rating-6"
+                  id="star1-6"
+                  type="radio"
+                /><label for="star1-6"></label>
+              </div>
+            </div>
+
+            <div class="flex justify-between items-end mb-4">
+              <div>
+                <p class="text-xs text-gray-400 mb-1">Цена:</p>
+                <p class="text-lg font-bold text-[#ff0099]">1 285 000 UZS</p>
+              </div>
+              <span
+                class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold"
+                >Dark project</span
+              >
+            </div>
+
+            <button
+              class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span class="font-medium">В корзину</span>
+            </button>
+          </div>
+
+          <div
+            class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+          >
+            <div class="absolute top-4 right-4 z-10">
+              <button
+                class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="h-48 flex items-center justify-center mb-4">
+              <img
+                src="../images/klavish2.webp"
+                alt="Laptop"
+                class="object-contain max-h-full"
+              />
+            </div>
+
+            <h3
+              class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
+            >
+              Dark Project ALU87 Daylight
+            </h3>
+
+            <div class="flex mb-4">
+              <div class="rating">
+                <input
+                  value="5"
+                  name="rating-7"
+                  id="star5-7"
+                  type="radio"
+                /><label for="star5-7"></label>
+                <input
+                  value="4"
+                  name="rating-7"
+                  id="star4-7"
+                  type="radio"
+                /><label for="star4-7"></label>
+                <input
+                  value="3"
+                  name="rating-7"
+                  id="star3-7"
+                  type="radio"
+                /><label for="star3-7"></label>
+                <input
+                  value="2"
+                  name="rating-7"
+                  id="star2-7"
+                  type="radio"
+                /><label for="star2-7"></label>
+                <input
+                  value="1"
+                  name="rating-7"
+                  id="star1-7"
+                  type="radio"
+                /><label for="star1-7"></label>
+              </div>
+            </div>
+
+            <div class="flex justify-between items-end mb-4">
+              <div>
+                <p class="text-xs text-gray-400 mb-1">Цена:</p>
+                <p class="text-lg font-bold text-[#ff0099]">1 116 000 UZS</p>
               </div>
               <span
                 class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
@@ -2896,8 +3611,7 @@ if (localStorage.getItem('theme') === 'dark') {
           </div>
 
           <div
-        data-aos="fade-up"
-     data-aos-duration="1000"    class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+            class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
           >
             <div class="absolute top-4 right-4 z-10">
               <button
@@ -2922,8 +3636,8 @@ if (localStorage.getItem('theme') === 'dark') {
 
             <div class="h-48 flex items-center justify-center mb-4">
               <img
-                src="./images/shirt.webp"
-                alt="Brateck"
+                src="../images/klavish3.webp"
+                alt="Laptop"
                 class="object-contain max-h-full"
               />
             </div>
@@ -2931,52 +3645,157 @@ if (localStorage.getItem('theme') === 'dark') {
             <h3
               class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
             >
-              T-shirt Sony XL
+              Dark Project ALU87 Midnight
             </h3>
 
             <div class="flex mb-4">
               <div class="rating">
                 <input
                   value="5"
-                  name="rating-100"
-                  id="star5-100"
+                  name="rating-8"
+                  id="star5-8"
                   type="radio"
-                /><label for="star5-100"></label>
+                /><label for="star5-8"></label>
                 <input
                   value="4"
-                  name="rating-100"
-                  id="star4-100"
+                  name="rating-8"
+                  id="star4-8"
                   type="radio"
-                /><label for="star4-100"></label>
+                /><label for="star4-8"></label>
                 <input
                   value="3"
-                  name="rating-100"
-                  id="star3-100"
+                  name="rating-8"
+                  id="star3-8"
                   type="radio"
-                /><label for="star3-100"></label>
+                /><label for="star3-8"></label>
                 <input
                   value="2"
-                  name="rating-100"
-                  id="star2-100"
+                  name="rating-8"
+                  id="star2-8"
                   type="radio"
-                /><label for="star2-100"></label>
+                /><label for="star2-8"></label>
                 <input
                   value="1"
-                  name="rating-100"
-                  id="star1-100"
+                  name="rating-8"
+                  id="star1-8"
                   type="radio"
-                /><label for="star1-100"></label>
+                /><label for="star1-8"></label>
               </div>
             </div>
 
             <div class="flex justify-between items-end mb-4">
               <div>
                 <p class="text-xs text-gray-400 mb-1">Цена:</p>
-                <p class="text-lg font-bold text-[#ff0099]">100 000 UZS</p>
+                <p class="text-lg font-bold text-[#ff0099]">1 116 000 UZS</p>
               </div>
               <span
                 class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
-                >Grava star</span
+                >Asus</span
+              >
+            </div>
+
+            <button
+              class="w-full bg-[#ff0099] hover:bg-[#e6008a] text-white py-2.5 rounded-md flex items-center justify-center gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span class="font-medium text-sm">В корзину</span>
+            </button>
+          </div>
+
+          <div
+            class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between"
+          >
+            <div class="absolute top-4 right-4 z-10">
+              <button
+                class="p-2 rounded-full border border-gray-200 hover:bg-gray-50 text-gray-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="h-48 flex items-center justify-center mb-4">
+              <img
+                src="../images/klavish4.webp"
+                alt="Gaming Laptop"
+                class="object-contain max-h-full"
+              />
+            </div>
+
+            <h3
+              class="text-sm text-gray-700 font-medium h-10 overflow-hidden line-clamp-2 mb-2"
+            >
+              Dark Project KD68 Sunrise
+            </h3>
+
+            <div class="flex mb-4">
+              <div class="rating">
+                <input
+                  value="5"
+                  name="rating-9"
+                  id="star5-9"
+                  type="radio"
+                /><label for="star5-9"></label>
+                <input
+                  value="4"
+                  name="rating-9"
+                  id="star4-9"
+                  type="radio"
+                /><label for="star4-9"></label>
+                <input
+                  value="3"
+                  name="rating-9"
+                  id="star3-9"
+                  type="radio"
+                /><label for="star3-9"></label>
+                <input
+                  value="2"
+                  name="rating-9"
+                  id="star2-9"
+                  type="radio"
+                /><label for="star2-9"></label>
+                <input
+                  value="1"
+                  name="rating-9"
+                  id="star1-9"
+                  type="radio"
+                /><label for="star1-9"></label>
+              </div>
+            </div>
+
+            <div class="flex justify-between items-end mb-4">
+              <div>
+                <p class="text-xs text-gray-400 mb-1">Цена:</p>
+                <p class="text-lg font-bold text-[#ff0099]">1 211 000 UZS</p>
+              </div>
+              <span
+                class="bg-[#ffebf7] text-[#ff0099] text-[10px] px-2 py-1 rounded font-bold uppercase"
+                >Dark project</span
               >
             </div>
 
@@ -3001,481 +3820,202 @@ if (localStorage.getItem('theme') === 'dark') {
             </button>
           </div>
         </div>
-      </div>
-    </section>
-   <section class="max-w-[1480px] mx-auto w-full   py-12 px-4">
-  <div
-    class="flex flex-col-reverse md:flex-row items-center justify-between gap-10"
-  >
-    <div data-aos="fade-up"
-     data-aos-duration="1000" class="w-full md:w-1/2 space-y-6 text-left">
-      <h2 class="text-3xl md:text-5xl font-black text-gray-900">
-        Конфигуратор
-      </h2>
-
-      <p
-        class="text-gray-700 text-sm md:text-base leading-relaxed max-w-lg"
-      >
-        Конфигуратор системного блока UPgrade поможет подобрать комплектацию
-        ПК и проверить комплектующие на совместимость. Выбирайте,
-        сравнивайте характеристики, заказывайте дополнительные опции для
-        создания конфигурации своей мечты!
-      </p>
-
-      <a  href="./pages/configurator.html">
-        <button
-          class="bg-[#ff007a] mt-[10px] hover:bg-[#d40065] text-white font-bold py-3 px-8 rounded-sm transition-all duration-300 flex items-center group"
-        >
-          Подобрать ПК
-        </button>
-      </a>
+            </p>
+          </div>
+        </div>
+      </main>
     </div>
-
-    <div data-aos="fade-up"
-     data-aos-duration="1000" class="w-full md:w-1/2 flex justify-center relative">
-      <div
-        class="absolute bg-pink-400 opacity-20 blur-[100px] rounded-full w-[300px] h-[300px]"
-      ></div>
-
-      <img
-        src="./images/keys.png"
-        alt=""
-        class="relative w-full max-w-[600px] object-contain drop-shadow-2xl"
-      />
-    </div>
-  </div>
-</section>
-<div data-aos="fade-up"
-     data-aos-duration="1000" class="max-w-[1480px] mx-auto p-6">
-  <h1 class="text-4xl font-[700]">Kомплектующие
-
-</h1>
-  <div
-    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-  >
-    <div data-aos="fade-up"
-     data-aos-duration="1000"
-      class="group relative bg-gray-200 rounded-lg p-6 flex flex-col items-center justify-between transition-all duration-300 hover:shadow-xl cursor-pointer"
-    >
-      <div class="h-40 flex items-center justify-center">
-        <img
-          src="./images/d32348b36c863e6fbcec18f69f0d2274d898db0eceda1675e89fd0ed08b7db0c.png"
-          alt="Клавиатуры"
-          class="max-h-full object-contain group-hover:scale-110 transition-transform"
-        />
-      </div>
-      <div class="mt-4 text-gray-700 font-medium">
-        <span>Клавиатуры</span>
-      </div>
-    </div>
-
-    <div data-aos="fade-up"
-     data-aos-duration="1000"
-      class="group relative bg-white border border-gray-100 rounded-lg p-6 flex flex-col items-center justify-between transition-all duration-300 hover:shadow-xl cursor-pointer"
-    >
-      <div class="h-40 flex items-center justify-center">
-        <img
-          src="./images/mishka.png"
-          alt="Мышки"
-          class="max-h-full object-contain group-hover:scale-110 transition-transform"
-        />
-      </div>
-      <div class="mt-4 text-gray-700 font-medium">
-        <span>Мышки</span>
-      </div>
-    </div>
-
-    <div data-aos="fade-up"
-     data-aos-duration="1000"
-      class="group relative bg-white border border-gray-100 rounded-lg p-6 flex flex-col items-center justify-between transition-all duration-300 hover:shadow-xl cursor-pointer"
-    >
-      <div class="h-40 flex items-center justify-center">
-        <img
-          src="./images/96079505d678680959dc0583173ee6aec88d410293eceeac98f3d586b263bab3.png"
-          alt="Микрофоны"
-          class="max-h-full object-contain group-hover:scale-110 transition-transform"
-        />
-      </div>
-      <div class="mt-4 text-gray-700 font-medium">
-        <span>Микрофоны</span>
-      </div>
-    </div>
-
-    <div data-aos="fade-up"
-     data-aos-duration="1000"
-      class="group relative bg-white border border-gray-100 rounded-lg p-6 flex flex-col items-center justify-between transition-all duration-300 hover:shadow-xl cursor-pointer"
-    >
-      <div class="h-40 flex items-center justify-center">
-        <img
-          src="./images/ce7ad3f5d18ab3247d08fcb5d54c6f0f4fcf1d2fb358cd58e7645a051f18b527.png"
-          alt="Наушники"
-          class="max-h-full object-contain group-hover:scale-110 transition-transform"
-        />
-      </div>
-      <div class="mt-4 text-gray-700 font-medium">
-        <span>Наушники</span>
-      </div>
-    </div>
-
-    <div data-aos="fade-up"
-     data-aos-duration="1000"
-      class="group relative bg-white border border-gray-100 rounded-lg p-6 flex flex-col items-center justify-between transition-all duration-300 hover:shadow-xl cursor-pointer"
-    >
-      <div class="h-40 flex items-center justify-center">
-        <img
-          src="./images/7e0ae5bd85f152a83a95341d111b6fe0e3b6e2153059db0eefc9e8a30c8871ca.png"
-          alt="Мониторы"
-          class="max-h-full object-contain group-hover:scale-110 transition-transform"
-        />
-      </div>
-      <div class="mt-4 text-gray-700 font-medium">
-        <span>Мониторы</span>
-      </div>
-    </div>
-
-    <div data-aos="fade-up"
-     data-aos-duration="1000"
-      class="group relative bg-white border border-gray-100 rounded-lg p-6 flex flex-col items-center justify-between transition-all duration-300 hover:shadow-xl cursor-pointer"
-    >
-      <div class="h-40 flex items-center justify-center">
-        <img
-          src="./images/be1738133cab1f5a7f60d6aedbdb67e08f5315c4c613d83e742fd3b25b9a7553.png"
-          alt="Кронштейны"
-          class="max-h-full object-contain group-hover:scale-110 transition-transform"
-        />
-      </div>
-      <div class="mt-4 text-gray-700 font-medium">
-        <span>Кронштейны</span>
-      </div>
-    </div>
-
-    <div data-aos="fade-up"
-     data-aos-duration="1000"
-      class="group relative bg-white border border-gray-100 rounded-lg p-6 flex flex-col items-center justify-between transition-all duration-300 hover:shadow-xl cursor-pointer"
-    >
-      <div class="h-40 flex items-center justify-center">
-        <img
-          src="./images/2ebffa53825ced446e5868fc9f51accfb1b41c77b0ebbfb5799ef620b33d741e.png"
-          alt="Колонки"
-          class="max-h-full object-contain group-hover:scale-110 transition-transform"
-        />
-      </div>
-      <div class="mt-4 text-gray-700 font-medium">
-        <span>Колонки</span>
-      </div>
-    </div>
-
-    <div data-aos="fade-up"
-     data-aos-duration="1000"
-      class="group relative bg-white border border-gray-100 rounded-lg p-6 flex flex-col items-center justify-between transition-all duration-300 hover:shadow-xl cursor-pointer"
-    >
-      <div class="h-40 flex items-center justify-center">
-        <img
-          src="./images/44d4917eb0aae08938709e5201034f2cf8046f9b9d3f105c0accc763d8a0dcd6.png"
-          alt="Коврики"
-          class="max-h-full object-contain group-hover:scale-110 transition-transform"
-        />
-      </div>
-      <div class="mt-4 text-gray-700 font-medium">
-        <span>Коврики</span>
-      </div>
-    </div>
-  </div>
-</div>
-       <section class="max-w-[1480px] mx-auto py-10 px-4" data-aos="fade-up"
-     data-aos-duration="1000">
-
-  <!-- Title -->
-  <h2   class="text-3xl font-bold uppercase mb-8 flex items-center gap-3">
-    <span class="text-black">◧</span>
-    КОМПАНИИ
-  </h2>
-
-  <!-- Main Wrapper -->
-  <div class="bg-white border border-gray-200">
-
-    <!-- Top Section -->
-    <div class="grid grid-cols-1 lg:grid-cols-2">
-
-      <!-- Left Image -->
-      <div class="w-full">
-        <img
-          src="./images/company.jpg"
-          alt="company team"
-          class="w-full h-full object-cover"
-        />
-      </div>
-
-      <!-- Right Content -->
-      <div class="p-10 flex flex-col justify-center">
-        <h3 class="text-4xl font-semibold mb-6">О компании</h3>
-
-        <p class="text-gray-600 leading-8 mb-5">
-          С 2009 года мы продаем компьютерную технику в Узбекистане.
-          Мы - официальные партнеры многих международных компаний,
-          что гарантирует качество нашей продукции.
-        </p>
-
-        <p class="text-gray-600 leading-8 mb-5">
-          Наши опытные сотрудники всегда готовы помочь с выбором техники.
-          В нашем шоуруме представлен широкий ассортимент товаров.
-        </p>
-
-        <p class="text-gray-600 leading-8 mb-8">
-          Мы предлагаем доставку по всей республике и поддерживаем
-          все виды оплаты для вашего удобства.
-        </p>
-
-        <button
-          class="border border-pink-500 px-6 py-3 w-fit hover:bg-pink-500 hover:text-white transition duration-300"
-        >
-          Узнать больше
-        </button>
-      </div>
-    </div>
-
-    <!-- Bottom Stats -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 border-t border-gray-200">
-
-      <!-- Card 1 -->
-      <div class="p-8 text-center border-r border-gray-200">
-        <h4 class="text-pink-500 font-bold mb-2">Лидеры</h4>
-        <p class="text-gray-600">на игровом рынке</p>
-        <div class="mt-6 text-3xl">→</div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="p-8 text-center border-r border-gray-200">
-        <h4 class="text-pink-500 font-bold mb-2">
-          Более <br> 500 положительных
-        </h4>
-        <p class="text-gray-600">отзывов</p>
-        <div class="mt-6 text-3xl">→</div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="p-8 text-center border-r border-gray-200">
-        <h4 class="text-pink-500 font-bold mb-2">
-          Провели <br> 32 киберспортивных
-        </h4>
-        <p class="text-gray-600">турнира</p>
-        <div class="mt-6 text-3xl">→</div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="p-8 text-center border-r border-gray-200">
-        <h4 class="text-pink-500 font-bold mb-2">
-          Топовые блогеры
-        </h4>
-        <p class="text-gray-600">выбирают нас</p>
-        <div class="mt-6 text-3xl">→</div>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="p-8 text-center">
-        <h4 class="text-pink-500 font-bold mb-2">
-          Оборудовали <br> 60 компьютерных клубов
-        </h4>
-        <p class="text-gray-600">под ключ</p>
-        <div class="mt-6 text-3xl">→</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<section class="max-w-[1480px] mx-auto px-4 py-10">
-  <!-- SUPPORT -->
-  <h2 class="text-3xl font-black mb-8 ">ПОДДЕРЖКА</h2>
-
-  <div data-aos="fade-up"
-     data-aos-duration="1000" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <!-- Card 1 -->
-    <div class="bg-gray-50 border border-gray-200 p-8 text-center space-y-4 hover:shadow-lg transition">
-      <div class="flex justify-center">
-        <img src="./images/dollor.png" class="w-16 h-16" />
-      </div>
-      <h3 class="text-lg font-medium">Способ оплаты</h3>
-      <p class="text-gray-600">Все об оплате покупок</p>
-      <span class="text-2xl">→</span>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="bg-gray-50 border border-gray-200 p-8 text-center space-y-4 hover:shadow-lg transition">
-      <div class="flex justify-center">
-        <img src="./images/soroq.png" class="w-16 h-16" />
-      </div>
-      <h3 class="text-lg font-medium">FAQ</h3>
-      <p class="text-gray-600">Часто задаваемые вопросы</p>
-      <span class="text-2xl">→</span>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="bg-gray-50 border border-gray-200 p-8 text-center space-y-4 hover:shadow-lg transition">
-      <div class="flex justify-center">
-        <img src="./images/box.png" class="w-16 h-16" />
-      </div>
-      <h3 class="text-lg font-medium">Доставка</h3>
-      <p class="text-gray-600">Информация о доставке</p>
-      <span class="text-2xl">→</span>
-    </div>
-  </div>
-
-  <!-- REVIEWS -->
-  <h2 class="text-3xl font-black mt-14 mb-8 ">ОТЗЫВЫ КЛИЕНТОВ</h2>
-
-  <div data-aos="fade-up"
-     data-aos-duration="1000" class="grid grid-cols-1 md:grid-cols-4 gap-6">
-    <!-- 95% -->
-    <div class="bg-gray-50 border p-6 space-y-3 hover:shadow-lg transition">
-      <p class="text-pink-500 font-medium">Общий рейтинг</p>
-      <h1 class="text-5xl font-bold">95%</h1>
-    </div>
-
-    <!-- Yandex -->
-    <div class="bg-gray-50 border p-6 space-y-3 hover:shadow-lg transition">
-      <p class="text-pink-500 font-medium">Yandex.uz</p>
-      <p class="text-gray-600">Оставить свой отзыв →</p>
-    </div>
-
-    <!-- Stars -->
-    <div class="bg-gray-50 border p-6 space-y-3 hover:shadow-lg transition">
-      <div class="text-pink-500 text-xl">★★★★★</div>
-      <p class="text-gray-600">93% покупателей купили бы здесь снова →</p>
-    </div>
-
-    <!-- 800+ -->
-    <div class="bg-gray-50 border p-6 space-y-3 hover:shadow-lg transition">
-      <p class="text-pink-500 text-2xl font-bold">800+</p>
-      <p class="text-gray-600">Положительных оценок за все время работы →</p>
-    </div>
-  </div>
-</section>
 <footer class="bg-black/20 border-t border-gray-200 pt-12 pb-8">
-  <div class="max-w-[1480px] mx-auto px-4">
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-10">
-      
-      <!-- Logo -->
-      <div class="lg:col-span-1">
-        <img
-          src="../images/d73d17452d7c7cd96e0f7e1e486fbb64538e33e4a91e9ef39b80a2603bcb2c31.png"
-          class="w-48 mb-6"
-          alt="Upgrade Logo"
-        />
+      <div class="max-w-screen-xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-10">
+          <div class="lg:col-span-1">
+            <img
+              src="../images/d73d17452d7c7cd96e0f7e1e486fbb64538e33e4a91e9ef39b80a2603bcb2c31.png"
+              class="w-48 mb-6"
+              alt="Upgrade Logo"
+            />
+          </div>
+
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 lg:col-span-3 gap-8 text-sm"
+          >
+            <div>
+              <h3 class="font-bold text-gray-900 mb-4 uppercase">Компания</h3>
+              <ul class="space-y-2 text-gray-600">
+                <li><a href="#" class="hover:text-pink-600">Контакты</a></li>
+                <li><a href="#" class="hover:text-pink-600">О нас</a></li>
+                <li><a href="#" class="hover:text-pink-600">Почему мы?</a></li>
+                <li>
+                  <a href="#" class="hover:text-pink-600">Публичная оферта</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900 mb-4 uppercase">Услуги</h3>
+              <ul class="space-y-2 text-gray-600">
+                <li><a href="#" class="hover:text-pink-600">Апгрейд</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900 mb-4 uppercase">Поддержка</h3>
+              <ul class="space-y-2 text-gray-600">
+                <li><a href="#" class="hover:text-pink-600">Доставка</a></li>
+                <li>
+                  <a href="#" class="hover:text-pink-600">Способ оплаты</a>
+                </li>
+                <li><a href="#" class="hover:text-pink-600">FAQ</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900 mb-4 uppercase">Проекты</h3>
+              <ul class="space-y-2 text-gray-600">
+                <li><a href="#" class="hover:text-pink-600">Блогеры</a></li>
+                <li>
+                  <a href="#" class="hover:text-pink-600">Игровые клубы</a>
+                </li>
+                <li><a href="#" class="hover:text-pink-600">Киберспорт</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-sm space-y-6">
+            <div>
+              <div class="flex items-center gap-2 mb-2 text-gray-900 font-bold">
+                <svg
+                  class="w-5 h-5 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                Телефоны
+              </div>
+              <div class="text-gray-600 space-y-1">
+                <p>+ 998 (99) 124-24-24</p>
+                <p>+ 998 (97) 124-24-24</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center gap-2 mb-2 text-gray-900 font-bold">
+                <svg
+                  class="w-5 h-5 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                Адреса
+              </div>
+              <div class="text-gray-600 space-y-1">
+                <p>г. Ташкент, ул. Навои 37</p>
+                <p>г. Ташкент, Трц. Малика, Магазин 24</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center gap-2 mb-2 text-gray-900 font-bold">
+                <svg
+                  class="w-5 h-5 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Режим работы
+              </div>
+              <p class="text-gray-600">Ежедневно с 10:00 до 20:00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-px bg-pink-500 w-full mb-8"></div>
+
+        <div class="flex flex-wrap justify-between gap-6 items-center">
+          <a href="#" class="flex items-center gap-3 group">
+            <div
+              class="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-100 group-hover:bg-pink-50 transition-colors"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+                class="w-6 h-6"
+                alt="Instagram"
+              />
+            </div>
+            <div>
+              <p
+                class="text-sm font-bold text-gray-900 group-hover:text-pink-600"
+              >
+                Instagram
+              </p>
+              <p class="text-xs text-gray-500">212 тыс. подписчиков</p>
+            </div>
+          </a>
+
+          <a href="#" class="flex items-center gap-3 group">
+            <div
+              class="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-100 group-hover:bg-red-50 transition-colors"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+                class="w-6 h-6"
+                alt="Youtube"
+              />
+            </div>
+            <div>
+              <p
+                class="text-sm font-bold text-gray-900 group-hover:text-red-600"
+              >
+                Youtube
+              </p>
+              <p class="text-xs text-gray-500">142 тыс. подписчиков</p>
+            </div>
+          </a>
+
+          <a href="#" class="flex items-center gap-3 group">
+            <div
+              class="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-100 group-hover:bg-blue-50 transition-colors"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+                class="w-6 h-6"
+                alt="Telegram"
+              />
+            </div>
+            <div>
+              <p
+                class="text-sm font-bold text-gray-900 group-hover:text-blue-600"
+              >
+                Telegram
+              </p>
+              <p class="text-xs text-gray-500">24.1 тыс. подписчиков</p>
+            </div>
+          </a>
+
+          <a href="#" class="flex items-center gap-3 group">
+            <div
+              class="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-100 group-hover:bg-gray-200 transition-colors"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg"
+                class="w-6 h-6"
+                alt="TikTok"
+              />
+            </div>
+            <div>
+              <p class="text-sm font-bold text-gray-900">Tik Tok</p>
+              <p class="text-xs text-gray-500">30 тыс. подписчиков</p>
+            </div>
+          </a>
+        </div>
       </div>
-
-      <!-- Links -->
-      <div class="grid grid-cols-2 md:grid-cols-4 lg:col-span-3 gap-8 text-sm">
-        
-        <div>
-          <h3 class="font-bold text-gray-900 mb-4 uppercase">Компания</h3>
-          <ul class="space-y-2 text-gray-600">
-            <li><a href="#" class="hover:text-pink-600">Контакты</a></li>
-            <li><a href="#" class="hover:text-pink-600">О нас</a></li>
-            <li><a href="#" class="hover:text-pink-600">Почему мы?</a></li>
-            <li><a href="#" class="hover:text-pink-600">Публичная оферта</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="font-bold text-gray-900 mb-4 uppercase">Услуги</h3>
-          <ul class="space-y-2 text-gray-600">
-            <li><a href="#" class="hover:text-pink-600">Апгрейд</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="font-bold text-gray-900 mb-4 uppercase">Поддержка</h3>
-          <ul class="space-y-2 text-gray-600">
-            <li><a href="#" class="hover:text-pink-600">Доставка</a></li>
-            <li><a href="#" class="hover:text-pink-600">Способ оплаты</a></li>
-            <li><a href="#" class="hover:text-pink-600">FAQ</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="font-bold text-gray-900 mb-4 uppercase">Проекты</h3>
-          <ul class="space-y-2 text-gray-600">
-            <li><a href="#" class="hover:text-pink-600">Блогеры</a></li>
-            <li><a href="#" class="hover:text-pink-600">Игровые клубы</a></li>
-            <li><a href="#" class="hover:text-pink-600">Киберспорт</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- Contact -->
-      <div class="text-sm space-y-6">
-        
-        <div>
-          <div class="flex items-center gap-2 mb-2 text-gray-900 font-bold">
-            Телефоны
-          </div>
-          <div class="text-gray-600 space-y-1">
-            <p>+ 998 (99) 124-24-24</p>
-            <p>+ 998 (97) 124-24-24</p>
-          </div>
-        </div>
-
-        <div>
-          <div class="flex items-center gap-2 mb-2 text-gray-900 font-bold">
-            Адреса
-          </div>
-          <div class="text-gray-600 space-y-1">
-            <p>г. Ташкент, ул. Навои 37</p>
-            <p>г. Ташкент, Трц. Малика, Магазин 24</p>
-          </div>
-        </div>
-
-        <div>
-          <div class="flex items-center gap-2 mb-2 text-gray-900 font-bold">
-            Режим работы
-          </div>
-          <p class="text-gray-600">Ежедневно с 10:00 до 20:00</p>
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- LINE -->
-    <div class="h-px bg-pink-500 w-full mb-8"></div>
-
-   <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-body sm:text-center">© 2009 <a href="https://flowbite.com/" class="hover:underline">UPGgrade™</a>. All Rights Reserved.
-          </span>
-          <div class="flex mt-4 sm:justify-center sm:mt-0">
-            <a href="#" class="text-body hover:text-heading">
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/></svg>
-                <span class="sr-only">Facebook page</span>
-            </a>
-            <a href="#" class="text-body hover:text-heading ms-5">
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M18.942 5.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.586 11.586 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3 17.392 17.392 0 0 0-2.868 11.662 15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.638 10.638 0 0 1-1.706-.83c.143-.106.283-.217.418-.331a11.664 11.664 0 0 0 10.118 0c.137.114.277.225.418.331-.544.328-1.116.606-1.71.832a12.58 12.58 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM8.678 14.813a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.929 1.929 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/></svg>
-                <span class="sr-only">Discord community</span>
-            </a>
-            <a href="#" class="text-body hover:text-heading ms-5">
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/></svg>
-            <span class="sr-only">Twitter page</span>
-            </a>
-            <a href="#" class="text-body hover:text-heading ms-5">
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/></svg>
-                <span class="sr-only">GitHub account</span>
-            </a>
-            <a href="#" class="text-body hover:text-heading ms-5">
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2a10 10 0 1 0 10 10A10.009 10.009 0 0 0 12 2Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.093 20.093 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM10 3.707a8.82 8.82 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.755 45.755 0 0 0 10 3.707Zm-6.358 6.555a8.57 8.57 0 0 1 4.73-5.981 53.99 53.99 0 0 1 3.168 4.941 32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.641 31.641 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM12 20.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 15.113 13a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/></svg>
-                <span class="sr-only">Dribbble account</span>
-            </a>
-          </div>
-      </div>
-    </div>
-
-  </div>
-</footer>
-    <script src="https://cdn.jotfor.ms/agent/embedjs/019dbee292b87326b2c39b534f61097f15ac/embed.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script>
-  AOS.init();
-</script>
   </body>
 </html>

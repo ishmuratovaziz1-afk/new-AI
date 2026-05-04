@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Upgrade</title>
+    <title>Upgrade</title>
     <link rel="stylesheet" href="../css/style.css" />
-     <link
+    <link
       rel="icon"
       href="./images/867b18a0c147c95b9cd84b784f5be05eea647bbbe7f6d059f4e66db9ae0c015f.svg"
     />
@@ -20,7 +20,7 @@
     />
   </head>
   <body>
-      <div class="loading">
+    <div class="loading">
       <!-- From Uiverse.io by esraaabdel-kareem -->
       <div class="loader">
         <div class="cup">
@@ -100,7 +100,44 @@
             </svg>
             <span class="text-[9px] font-bold uppercase mt-1">Сравнение</span>
           </div>
-          <div class="flex flex-col items-center cursor-pointer text-gray-600  max-[420px]:hidden">
+            <div class="theme-wrapper">
+  <button id="theme-toggle" class="theme-btn">
+    <div class="sun-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+    </div>
+    <span>Тема</span>
+  </button>
+</div>
+<script>
+  const btn = document.getElementById('theme-toggle');
+
+btn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  
+  if (document.body.classList.contains('dark-mode')) {
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.setItem('theme', 'light');
+  }
+});
+
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark-mode');
+}
+</script>
+          <div
+            class="flex flex-col items-center cursor-pointer text-gray-600 max-[420px]:hidden"
+          >
             <svg
               class="w-6 h-6"
               fill="none"
@@ -135,19 +172,120 @@
 
       <div class="hidden md:block bg-white border-t border-gray-100">
         <div class="max-w-screen-xl mx-auto px-4 flex items-center">
-           <button
-              class=" bg-[#ef0361] text-white flex items-center gap-2 px-6 py-3 font-bold text-sm uppercase"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M4 6h16M4 12h16m-7 6h7" />
-              </svg>
-              Каталог
-            </button>
+           <!-- cotolog  -->
+           <div class="bg-white border-b sticky top-0 z-[100]   flex items-center gap-6 max-w-[1480px] ">
+        <button id="catalogBtn" class="bg-[#c2005d] hover:bg-[#a0004d] text-white px-5 py-2 flex items-center gap-2 transition-all font-medium">
+            <span id="btnIcon">☰</span>
+            <span id="btnText">Каталог</span>
+        </button>
+       
+    </div>
+
+    <div id="catalogOverlay" class="hidden fixed inset-0 top-[73px] bg-black/40 z-[999] backdrop-blur-sm">
+        <div class="bg-white w-full max-w-5xl h-[500px] mx-auto flex shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-4 duration-300">
+            
+            <div class="w-1/3 border-r bg-gray-50 overflow-y-auto custom-scroll">
+                <ul id="mainCategories">
+                </ul>
+            </div>
+
+            <div class="w-2/3 p-8 bg-white overflow-y-auto custom-scroll">
+                <h2 id="subTitle" class="text-[#c2005d] font-bold text-xl mb-6 border-b pb-2">Kategoriyani tanlang</h2>
+                <div id="subContent" class="grid grid-cols-1 gap-3 text-gray-600 font-medium">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+  
+    
+
+    <script>
+        const menuData = {
+            "accessories": {
+                name: "Аксессуары",
+                items: ["Декоративное освещение", "Футболка", "Студийный свет", "Очки для геймеров", "Зарядные устройства", "Кейкапы"]
+            },
+            "monitors": {
+                name: "Мониторы",
+                items: ["Чистящие средства", "Кронштейны", "Игровые мониторы 144Hz", "4K Monitorlar"]
+            },
+            "headphones": {
+                name: "Наушники",
+                items: ["Подставка для наушников", "Беспроводные", "Игровые гарнитуры"]
+            },
+            "keyboards": {
+                name: "Клавиатуры",
+                items: ["Механические", "Мембранные", "Кейкапы и свичи"]
+            }
+        };
+
+        const catalogBtn = document.getElementById('catalogBtn');
+        const overlay = document.getElementById('catalogOverlay');
+        const mainCategories = document.getElementById('mainCategories');
+        const subTitle = document.getElementById('subTitle');
+        const subContent = document.getElementById('subContent');
+
+        // 1. Kategoriyalarni generatsiya qilish
+        function initMenu() {
+            Object.keys(menuData).forEach(key => {
+                const li = document.createElement('li');
+                li.className = "group px-6 py-4 border-b border-gray-100 hover:bg-white flex justify-between items-center cursor-pointer transition-all hover:text-[#c2005d]";
+                li.innerHTML = `<span>${menuData[key].name}</span> <span class="text-gray-300 group-hover:text-[#c2005d]">▶</span>`;
+                
+                // HOVER bo'lganda o'ng tomonni yangilash
+                li.addEventListener('mouseenter', () => updateSubMenu(key));
+                mainCategories.appendChild(li);
+            });
+        }
+
+        function updateSubMenu(key) {
+            const data = menuData[key];
+            subTitle.innerText = data.name;
+            subContent.innerHTML = data.items.map(item => `
+                <a href="#" class="hover:bg-pink-50 p-2 rounded-md transition-colors hover:text-[#c2005d] border-l-2 border-transparent hover:border-[#c2005d]">
+                    ${item}
+                </a>
+            `).join('');
+        }
+
+        // 2. Katalog tugmasini boshqarish
+        catalogBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = !overlay.classList.contains('hidden');
+            
+            if (isOpen) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+
+        function openMenu() {
+            overlay.classList.remove('hidden');
+            document.body.classList.add('no-scroll');
+            document.getElementById('btnText').innerText = "Закрыть";
+            document.getElementById('btnIcon').innerText = "✕";
+            // Birinchi elementni avtomatik tanlash
+            updateSubMenu(Object.keys(menuData)[0]);
+        }
+
+        function closeMenu() {
+            overlay.classList.add('hidden');
+            document.body.classList.remove('no-scroll');
+            document.getElementById('btnText').innerText = "Каталог";
+            document.getElementById('btnIcon').innerText = "☰";
+        }
+
+        // Tashqariga bosilganda yopish
+        window.addEventListener('click', (e) => {
+            if (e.target === overlay) closeMenu();
+        });
+
+        initMenu();
+    </script>
+          <!-- cotolog  -->
           <div
             class="flex items-center space-x-6 ml-6 text-[13px] font-semibold text-gray-700 py-3"
           >
@@ -156,7 +294,7 @@
                 src="../images/60408282791fd3a9d468c5bc5e91f9306c8f30a3ce4245fa108f3160ad2dc372.svg"
                 alt=""
               />
-              <a href="../pages/configurator.html " class="hover:text-pink-600">
+              <a href="./configurator.html" class="hover:text-pink-600">
                 Конфигуратор</a
               >
             </div>
@@ -165,13 +303,12 @@
                 src="../images/867b18a0c147c95b9cd84b784f5be05eea647bbbe7f6d059f4e66db9ae0c015f.svg"
                 alt=""
               />
-              <a href="#" class="hover:text-pink-600">Купить компьютер</a>
+              <a href="./igrovye-sborki.html" class="hover:text-pink-600">Купить компьютер</a>
             </div>
-            <a href="#" class="hover:text-pink-600">Новинки</a>
-            <a href="#" class="hover:text-pink-600 border-b-2 border-brand"
-              >HyperX</a
+            <a href="./news.html" class="hover:text-pink-600">Новинки</a>
+            
             >
-            <a href="#" class="hover:text-pink-600 border-b-2 border-brand"
+            <a href="../pages/trademarks.html" class="hover:text-pink-600 border-b-2 border-brand"
               >Все бренды</a
             >
           </div>
@@ -518,25 +655,29 @@
         </div>
       </form>
     </div>
-<main>
-    <section>
-        <div class="container mx-auto flex justify-center pt-12 pb-8 ">
-            <img src="../images/e5ee7dba63e7d1e789cabecda8229c8622ccb7e711ca7c066bf56d76ef3f9496.svg" alt="">
-            
+    <main>
+      <section>
+        <div class="container mx-auto flex justify-center pt-12 pb-8">
+          <img
+            src="../images/e5ee7dba63e7d1e789cabecda8229c8622ccb7e711ca7c066bf56d76ef3f9496.svg"
+            alt=""
+          />
         </div>
-        <h1 class="text-[#ef0361] flex justify-center text-[30px]" >Страница в разработке
-
-</h1>
-<div class="flex justify-center pt-12 pb-8">
-    <a href="../index.html">
-    <button class=" py-[12px] px-[10px] bg-[#ef0361] rounded-[13px] text-[20px] font-700 text-white active:scale-95">Перейти на главную
-
- </button>
-</a>
-</div>
-    </section>
-</main>
-    <footer class="bg-white border-t border-gray-200 pt-12 pb-8">
+        <h1 class="text-[#ef0361] flex justify-center text-[30px]">
+          Страница в разработке
+        </h1>
+        <div class="flex justify-center pt-12 pb-8">
+          <a href="../index.html">
+            <button
+              class="py-[12px] px-[10px] bg-[#ff0096] rounded-[13px] text-[20px] font-700 text-white active:scale-95"
+            >
+              Перейти на главную
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class=" bg-black/20 border-t border-gray-200 pt-12 pb-8">
       <div class="max-w-screen-xl mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-10">
           <div class="lg:col-span-1">
@@ -727,8 +868,7 @@
         </div>
       </div>
     </footer>
-   <script src='https://cdn.jotfor.ms/agent/embedjs/019dbee292b87326b2c39b534f61097f15ac/embed.js'>
-</script>
+    <script src="https://cdn.jotfor.ms/agent/embedjs/019dbee292b87326b2c39b534f61097f15ac/embed.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   </body>
 </html>

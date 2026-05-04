@@ -328,3 +328,62 @@
   .s{
     background-color: #ef0361;
   }
+
+
+  body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+
+/* Dark Mode - hamma elementga ta'sir qiladi */
+body.dark-mode {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* Saytdagi barcha bloklar rangini moslashtirish */
+body.dark-mode * {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode div, 
+body.dark-mode section, 
+body.dark-mode nav,
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+/* Ixcham tugma dizayni */
+.theme-wrapper {
+  display: flex;
+  justify-content: center;
+   
+}
+
+.theme-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px; /* Ikonka va matn orasidagi masofa mini */
+  padding: 5px;
+  font-size: 11px; /* Matn kichraytirildi */
+  font-weight: 600;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.theme-btn:hover {
+  opacity: 0.8;
+}
+
+.theme-btn:active {
+  transform: scale(0.92);
+}
