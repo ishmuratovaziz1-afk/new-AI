@@ -308,7 +308,7 @@
   .rating label {
     content: '★';
     font-size: 20px;
-    color: #e5e7eb; /* kulrang yulduz */
+    color: #e5e7eb;  
     cursor: pointer;
     transition: color 0.2s;
   }
@@ -320,7 +320,7 @@
   .rating input:checked ~ label,
   .rating label:hover,
   .rating label:hover ~ label {
-    color: #ffb800; /* sariq yulduz */
+    color: #ffb800;  
   }
 
 
@@ -338,13 +338,11 @@
   
 }
 
-/* Dark Mode - hamma elementga ta'sir qiladi */
 body.dark-mode {
   background-color: #000000 !important;
   color: #ffffff !important;
 }
 
-/* Saytdagi barcha bloklar rangini moslashtirish */
 body.dark-mode * {
   border-color: rgba(255, 255, 255, 0.1);
 }
@@ -358,7 +356,6 @@ body.dark-mode footer {
   color: inherit !important;
 }
 
-/* Ixcham tugma dizayni */
 .theme-wrapper {
   display: flex;
   justify-content: center;
@@ -373,9 +370,9 @@ body.dark-mode footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px; /* Ikonka va matn orasidagi masofa mini */
+  gap: 2px;  
   padding: 5px;
-  font-size: 11px; /* Matn kichraytirildi */
+  font-size: 11px;  
   font-weight: 600;
   transition: transform 0.2s, opacity 0.2s;
 }
@@ -386,4 +383,11 @@ body.dark-mode footer {
 
 .theme-btn:active {
   transform: scale(0.92);
+}
+
+
+
+
+.drawer-2{
+  backdrop-filter: blur(10px);
 }

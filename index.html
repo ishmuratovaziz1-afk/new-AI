@@ -120,7 +120,7 @@
               <span class="text-[9px] font-bold uppercase mt-1">Сравнение</span>
             </div>
             <div class="theme-wrapper">
-  <button id="theme-toggle" class="theme-btn">
+  <button id="theme-toggle" class="max-[440px]:hidden theme-btn">
     <div class="sun-icon">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
         <circle cx="12" cy="12" r="5"></circle>
@@ -154,21 +154,72 @@ if (localStorage.getItem('theme') === 'dark') {
   document.body.classList.add('dark-mode');
 }
 </script>
-            <div
-              class="flex flex-col items-center cursor-pointer text-gray-600"
-            >
-              <svg
-                class="w-6 h-6"
+
+           <div class="relative group inline-block max-[470px]:hidden">
+    <div class="flex flex-col items-center cursor-pointer text-gray-600 transition-all duration-300 group-hover:scale-110">
+        <div class="relative">
+            <svg
+                class="w-6 h-6 transition-colors group-hover:text-[#e3007e]"
                 fill="none"
                 stroke="currentColor"
+                stroke-width="2" 
                 viewBox="0 0 24 24"
-              >
+            >
                 <path
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                 />
-              </svg>
-              <span class="text-[9px] font-bold uppercase mt-1">Корзина</span>
+            </svg>
+            <span class="absolute -top-1.5 -right-2 bg-[#e3007e] text-white text-[8px] font-bold px-1 py-0.5 rounded-full min-w-[14px] h-[14px] flex items-center justify-center border border-white">
+                1
+            </span>
+        </div>
+        <span class="text-[9px] font-bold uppercase mt-1 transition-colors group-hover:text-[#e3007e]">Корзина</span>
+    </div>
+
+    <div class="absolute right-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100] translate-y-2 group-hover:translate-y-0">
+        <div class="w-[450px] bg-white border border-gray-200 rounded-2xl shadow-2xl p-5">
+            
+         
+            <div class="flex items-center gap-4">
+                <img src="./images/7b13cd7fc4988f56b7531807d1f2bf087acb5d744549817b14d577c1cb4697e7 (3).webp" alt="Monitor" class="w-16 h-12 object-contain flex-shrink-0">
+                
+                <div class="flex-1 min-w-0">
+                    <h4 class="text-[13px] font-bold text-gray-800 leading-tight">2E Gaming R2723BV 27" 165Hz VA (Curved)</h4>
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="flex items-center border border-gray-300 rounded-lg bg-white overflow-hidden">
+                            <button class="px-3 py-1 hover:bg-gray-100 text-sm font-bold">-</button>
+                            <span class="px-4 py-1 text-sm font-bold border-x border-gray-300">1</span>
+                            <button class="px-3 py-1 hover:bg-gray-100 text-sm font-bold">+</button>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-[14px] font-bold text-gray-900">2 019 000 UZS</p>
+                            <p class="text-[10px] text-gray-400">2 019 000 UZS / 1 товар</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="p-2 text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors border border-gray-200">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
             </div>
+
+            <div class="my-5 border-t border-gray-100"></div>
+
+            <div class="flex items-center justify-between">
+                <div class="text-[15px]">
+                    <span class="text-gray-500 font-medium">Всего :</span>
+                    <span class="font-extrabold text-gray-900 ml-2">2 019 000 UZS</span>
+                </div>
+                
+                <button class="bg-[#e3007e] hover:bg-[#c4006d] text-white text-xs font-bold py-3 px-8 rounded-xl transition-all shadow-lg shadow-pink-200 active:scale-95 uppercase">
+                    Перейти к заказу
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
             <button
               data-modal-target="authentication-modal"
               data-modal-toggle="authentication-modal"
@@ -306,7 +357,7 @@ if (localStorage.getItem('theme') === 'dark') {
     </script>
           <!-- cotolog  -->
             <div
-              class="flex items-center space-x-6 ml-6 text-[13px] font-semibold text-gray-700 py-3"
+              class="flex  items-center space-x-6 ml-6 text-[13px] font-semibold text-gray-700 py-3"
             >
               <div class="flex items-center gap-2">
                 <img
@@ -340,7 +391,7 @@ if (localStorage.getItem('theme') === 'dark') {
 
       <div
         id="drawer-navigation"
-        class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 border-e border-gray-200"
+        class="drawer-2 fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-[black]/30 bg-blur-[8px] w-80 border-e border-gray-200"
         tabindex="-1"
         aria-labelledby="drawer-navigation-label"
       >
@@ -379,7 +430,7 @@ if (localStorage.getItem('theme') === 'dark') {
           </button>
         </div>
 
-        <div class="py-5 overflow-y-auto">
+        <div class="py-5 overflow-y-auto ">
           <ul class="space-y-2 font-medium">
             <li>
               <a
@@ -452,6 +503,20 @@ if (localStorage.getItem('theme') === 'dark') {
                     href="./pages/igrovye-sborki.html"
                     class="pl-11 flex items-center px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-gray-50 hover:text-brand"
                     >Игровые ПК</a
+                  >
+                </li>
+                  <li>
+                  <a
+                    href="./pages/igrovye-sborki.html"
+                    class="pl-11 flex items-center px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-gray-50 hover:text-brand"
+                    >Купить компьютер</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./pages/trademarks.html"
+                    class="pl-11 flex items-center px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-gray-50 hover:text-brand"
+                    >Все бренды</a
                   >
                 </li>
                 <li>
@@ -547,7 +612,6 @@ if (localStorage.getItem('theme') === 'dark') {
         aria-hidden="true"
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
       >
-        <!-- From Uiverse.io by JohnnyCSilva -->
         <form class="form">
           <div class="flex-column">
             <label>Email </label>
@@ -683,7 +747,7 @@ if (localStorage.getItem('theme') === 'dark') {
         <div class="max-w-[1480px] mx-auto px-4">
           <div
             id="default-carousel"
-            class="relative w-full z-[-50]"
+            class="relative w-full  "
             data-carousel="slide"
           >
             <div
@@ -3185,19 +3249,15 @@ if (localStorage.getItem('theme') === 'dark') {
        <section class="max-w-[1480px] mx-auto py-10 px-4" data-aos="fade-up"
      data-aos-duration="1000">
 
-  <!-- Title -->
   <h2   class="text-3xl font-bold uppercase mb-8 flex items-center gap-3">
     <span class="text-black">◧</span>
     КОМПАНИИ
   </h2>
 
-  <!-- Main Wrapper -->
   <div class="bg-white border border-gray-200">
 
-    <!-- Top Section -->
     <div class="grid grid-cols-1 lg:grid-cols-2">
 
-      <!-- Left Image -->
       <div class="w-full">
         <img
           src="./images/company.jpg"
@@ -3206,7 +3266,6 @@ if (localStorage.getItem('theme') === 'dark') {
         />
       </div>
 
-      <!-- Right Content -->
       <div class="p-10 flex flex-col justify-center">
         <h3 class="text-4xl font-semibold mb-6">О компании</h3>
 
@@ -3226,15 +3285,17 @@ if (localStorage.getItem('theme') === 'dark') {
           все виды оплаты для вашего удобства.
         </p>
 
-        <button
+        <a href="./pages/information.html">
+          <button
           class="border border-pink-500 px-6 py-3 w-fit hover:bg-pink-500 hover:text-white transition duration-300"
         >
           Узнать больше
         </button>
+        </a>
+        
       </div>
     </div>
 
-    <!-- Bottom Stats -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 border-t border-gray-200">
 
       <!-- Card 1 -->
@@ -3284,12 +3345,10 @@ if (localStorage.getItem('theme') === 'dark') {
   </div>
 </section>
 <section class="max-w-[1480px] mx-auto px-4 py-10">
-  <!-- SUPPORT -->
   <h2 class="text-3xl font-black mb-8 ">ПОДДЕРЖКА</h2>
 
   <div data-aos="fade-up"
      data-aos-duration="1000" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <!-- Card 1 -->
     <div class="bg-gray-50 border border-gray-200 p-8 text-center space-y-4 hover:shadow-lg transition">
       <div class="flex justify-center">
         <img src="./images/dollor.png" class="w-16 h-16" />
@@ -3320,34 +3379,41 @@ if (localStorage.getItem('theme') === 'dark') {
     </div>
   </div>
 
-  <!-- REVIEWS -->
   <h2 class="text-3xl font-black mt-14 mb-8 ">ОТЗЫВЫ КЛИЕНТОВ</h2>
 
   <div data-aos="fade-up"
      data-aos-duration="1000" class="grid grid-cols-1 md:grid-cols-4 gap-6">
     <!-- 95% -->
+  <a href="https://yandex.uz/maps/org/upg/124982657071/?ll=69.246823%2C41.321262&z=16">  
     <div class="bg-gray-50 border p-6 space-y-3 hover:shadow-lg transition">
       <p class="text-pink-500 font-medium">Общий рейтинг</p>
       <h1 class="text-5xl font-bold">95%</h1>
     </div>
+  </a>
 
     <!-- Yandex -->
-    <div class="bg-gray-50 border p-6 space-y-3 hover:shadow-lg transition">
+    <a href="https://yandex.uz/maps/org/upg/124982657071/reviews/?ll=69.246823%2C41.321262&z=16">
+      <div class="bg-gray-50 border p-6 space-y-3 hover:shadow-lg transition">
       <p class="text-pink-500 font-medium">Yandex.uz</p>
-      <p class="text-gray-600">Оставить свой отзыв →</p>
+      <p class="text-gray-600">Оставить свой 
+        <br> отзыв →</p>
     </div>
+    </a>
 
     <!-- Stars -->
-    <div class="bg-gray-50 border p-6 space-y-3 hover:shadow-lg transition">
+   <a href="https://yandex.uz/maps/org/upg/124982657071/?ll=69.246823%2C41.321262&z=16">
+     <div class="bg-gray-50 border p-6 space-y-3 hover:shadow-lg transition">
       <div class="text-pink-500 text-xl">★★★★★</div>
       <p class="text-gray-600">93% покупателей купили бы здесь снова →</p>
     </div>
+   </a>
 
-    <!-- 800+ -->
-    <div class="bg-gray-50 border p-6 space-y-3 hover:shadow-lg transition">
+   <a href="https://yandex.uz/maps/org/upg/124982657071/?ll=69.246823%2C41.321262&z=16">
+     <div class="bg-gray-50 border p-6 space-y-3 hover:shadow-lg transition">
       <p class="text-pink-500 text-2xl font-bold">800+</p>
       <p class="text-gray-600">Положительных оценок за все время работы →</p>
     </div>
+   </a>
   </div>
 </section>
 <footer class="bg-black/20 border-t border-gray-200 pt-12 pb-8">
@@ -3438,7 +3504,6 @@ if (localStorage.getItem('theme') === 'dark') {
 
     </div>
 
-    <!-- LINE -->
     <div class="h-px bg-pink-500 w-full mb-8"></div>
 
    <div class="sm:flex sm:items-center sm:justify-between">
